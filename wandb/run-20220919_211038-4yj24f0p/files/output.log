@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/train.py", line 64, in <module>
+    logger=wandb_logger,
+NameError: name 'wandb_logger' is not defined

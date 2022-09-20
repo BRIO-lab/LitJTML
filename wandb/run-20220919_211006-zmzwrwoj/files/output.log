@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/train.py", line 59, in <module>
+    model = MyLightningModule(pose_hrnet=pose_hrnet) # I can put some data module stuff in this argument if I want
+TypeError: __init__() missing 1 required positional argument: 'wandb_run'

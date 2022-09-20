@@ -1,0 +1,93 @@
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loggers/wandb.py:352: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name       | Type                  | Params
+-----------------------------------------------------
+0 | pose_hrnet | PoseHighResolutionNet | 9.3 M
+1 | loss_fn    | BCEWithLogitsLoss     | 0
+-----------------------------------------------------
+9.3 M     Trainable params
+0         Non-trainable params
+9.3 M     Total params
+37.200    Total estimated model params size (MB)
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/core/module.py:555: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  value = torch.tensor(value, device=self.device)
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/utilities/data.py:98: UserWarning: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 1. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+  warning_cache.warn(
+Traceback (most recent call last):
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/train.py", line 70, in <module>
+    trainer.fit(model, data_module)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 696, in fit
+    self._call_and_handle_interrupt(
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 650, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 735, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1166, in _run
+    results = self._run_stage()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1252, in _run_stage
+    return self._run_train()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1283, in _run_train
+    self.fit_loop.run()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/fit_loop.py", line 271, in advance
+    self._outputs = self.epoch_loop.run(self._data_fetcher)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/epoch/training_epoch_loop.py", line 203, in advance
+    batch_output = self.batch_loop.run(kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/batch/training_batch_loop.py", line 87, in advance
+    outputs = self.optimizer_loop.run(optimizers, kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 201, in advance
+    result = self._run_optimization(kwargs, self._optimizers[self.optim_progress.optimizer_position])
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 248, in _run_optimization
+    self._optimizer_step(optimizer, opt_idx, kwargs.get("batch_idx", 0), closure)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 358, in _optimizer_step
+    self.trainer._call_lightning_module_hook(
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1550, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/core/module.py", line 1672, in optimizer_step
+    optimizer.step(closure=optimizer_closure)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/core/optimizer.py", line 168, in step
+    step_output = self._strategy.optimizer_step(self._optimizer, self._optimizer_idx, closure, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/strategies/strategy.py", line 216, in optimizer_step
+    return self.precision_plugin.optimizer_step(model, optimizer, opt_idx, closure, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/plugins/precision/precision_plugin.py", line 153, in optimizer_step
+    return optimizer.step(closure=closure, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/optim/optimizer.py", line 88, in wrapper
+    return func(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/optim/adam.py", line 66, in step
+    loss = closure()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/plugins/precision/precision_plugin.py", line 138, in _wrap_closure
+    closure_result = closure()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 146, in __call__
+    self._result = self.closure(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 132, in closure
+    step_output = self._step_fn()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 407, in _training_step
+    training_step_output = self.trainer._call_strategy_hook("training_step", *kwargs.values())
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1704, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/strategies/strategy.py", line 358, in training_step
+    return self.model.training_step(*args, **kwargs)
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/lit_pose_hrnet.py", line 34, in training_step
+    self.wandb_run.log('train/loss', loss, on_step=True)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 256, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 222, in wrapper
+    return func(self, *args, **kwargs)
+TypeError: log() got an unexpected keyword argument 'on_step'
+Epoch 0:   0%|                                                      | 0/2058 [00:00<?, ?it/s]

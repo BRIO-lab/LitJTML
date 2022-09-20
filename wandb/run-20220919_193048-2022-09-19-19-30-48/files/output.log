@@ -1,0 +1,6 @@
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loggers/wandb.py:352: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Traceback (most recent call last):
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/train.py", line 59, in <module>
+    model = MyLightningModule(pose_hrnet=pose_hrnet) # I can put some data module stuff in this argument if I want
+TypeError: __init__() missing 1 required positional argument: 'wandb_run'

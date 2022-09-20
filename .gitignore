@@ -1,0 +1,5 @@
+# This is the files git will ignore
+
+
+# Checkpoint files contain model weights and are rather big. To move specific ones, let's use a File Transfer Protocol such as SFTP.
+*.ckpt

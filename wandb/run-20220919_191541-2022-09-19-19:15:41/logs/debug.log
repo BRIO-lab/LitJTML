@@ -1,0 +1,36 @@
+2022-09-19 19:15:41,714 INFO    MainThread:31303 [wandb_setup.py:_flush():76] Configure stats pid to 31303
+2022-09-19 19:15:41,714 INFO    MainThread:31303 [wandb_setup.py:_flush():76] Loading settings from /home/sasank/.config/wandb/settings
+2022-09-19 19:15:41,714 INFO    MainThread:31303 [wandb_setup.py:_flush():76] Loading settings from /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/settings
+2022-09-19 19:15:41,715 INFO    MainThread:31303 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-09-19 19:15:41,715 INFO    MainThread:31303 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'scripts/train.py', 'program': '/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/train.py'}
+2022-09-19 19:15:41,715 INFO    MainThread:31303 [wandb_init.py:_log_setup():461] Logging user logs to /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220919_191541-2022-09-19-19:15:41/logs/debug.log
+2022-09-19 19:15:41,715 INFO    MainThread:31303 [wandb_init.py:_log_setup():462] Logging internal logs to /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220919_191541-2022-09-19-19:15:41/logs/debug-internal.log
+2022-09-19 19:15:41,715 INFO    MainThread:31303 [wandb_init.py:init():495] calling init triggers
+2022-09-19 19:15:41,715 INFO    MainThread:31303 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {}
+2022-09-19 19:15:41,715 INFO    MainThread:31303 [wandb_init.py:init():548] starting backend
+2022-09-19 19:15:41,715 INFO    MainThread:31303 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-09-19 19:15:41,722 INFO    MainThread:31303 [backend.py:ensure_launched():217] starting backend process...
+2022-09-19 19:15:41,727 INFO    MainThread:31303 [backend.py:ensure_launched():222] started backend process with pid: 31320
+2022-09-19 19:15:41,728 INFO    MainThread:31303 [wandb_init.py:init():558] backend started and connected
+2022-09-19 19:15:41,732 INFO    MainThread:31303 [wandb_init.py:init():634] updated telemetry
+2022-09-19 19:15:41,733 INFO    MainThread:31303 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-09-19 19:16:06,723 WARNING MainThread:31303 [wandb_init.py:init():1064] interrupted
+Traceback (most recent call last):
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1043, in init
+    run = wi.init()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 668, in init
+    run_result = backend.interface.communicate_run(
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 223, in communicate_run
+    return self._communicate_run(run, timeout=timeout)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 324, in _communicate_run
+    resp = self._communicate(req, timeout=timeout)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 226, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/wandb/sdk/interface/router.py", line 37, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/threading.py", line 574, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
