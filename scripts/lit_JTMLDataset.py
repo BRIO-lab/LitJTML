@@ -20,16 +20,16 @@ class LitJTMLDataset(Dataset):
     def __init__(self, dataset, img_dir):
 
         #self.img_dir = '/media/sasank/LinuxStorage/Dropbox (UFL)/Canine Kinematics Data/TPLO_Ten_Dogs_grids'
-        #self.img_dir = img_dir
-        self.img_dir = '/blue/banks/sasank.desaraju/Sasank_JTML_seg/Images/TPLO_Tend_Dogs_grids_2_22_22'
+        self.img_dir = img_dir
+        #self.img_dir = '/blue/banks/sasank.desaraju/Sasank_JTML_seg/Images/TPLO_Tend_Dogs_grids_2_22_22'
         self.data_dir = ''  # I don't know if this will actually get used if I pass in a loaded dataset
 
         self.dataset = dataset
         self.images = self.dataset[1:,0]
         self.length = len(self.images)
 
-        if os.path.isfile('/blue/banks/sasank.desaraju/Sasank_JTML_seg/Images/TPLO_Tend_Dogs_grids_2_22_22/grid_Calib file test_000000000381.tif') ==False:
-            raise Exception('Error, cannot find the first file')
+        #if os.path.isfile('/blue/banks/sasank.desaraju/Sasank_JTML_seg/Images/TPLO_Ten_Dogs_grids_2_22_22/grid_Calib file test_000000000381.tif') ==False:
+        #    raise Exception('Error, cannot find the first file')
 
         # image check
         #print('Image directory: ' + self.config.data_constants["IMAGE_DIRECTORY"])

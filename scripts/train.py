@@ -32,8 +32,7 @@ config = config_module.Configuration()
 #"""
 
 # setting up the logger
-os.environ["WANDB_API_KEY"] = '7170a51cf84ccb0f25a63d6d3a388224cea8b036'
-os.environ["WANDB_RUN_GROUP"] = "miller-lab"
+os.environ["WANDB_RUN_GROUP"] = config.init['WANDB_RUN_GROUP']
 wandb_run = wandb.init(
     project=config.init['PROJECT_NAME'],
     name=config.init['RUN_NAME'],
@@ -62,11 +61,11 @@ model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run) # I can pu
 
 save_best_val_checkpoint_callback = ModelCheckpoint(monitor='validation/loss', mode='min')
 trainer = pl.Trainer(accelerator='gpu',
-devices=1,
-#logger=wandb_logger,
-default_root_dir=os.getcwd(),
-callbacks=[save_best_val_checkpoint_callback],
-fast_dev_run=False,
-max_epochs=1,
-max_steps=2)
+    devices=1,
+    #logger=wandb_logger,
+    default_root_dir=os.getcwd(),
+    callbacks=[save_best_val_checkpoint_callback],
+    fast_dev_run=config.init['FAST_DEV_RUN'],
+    max_epochs=1,
+    max_steps=2)
 trainer.fit(model, data_module)
