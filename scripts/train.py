@@ -3,7 +3,7 @@ Sasank Desaraju
 9/9/2022
 """
 
-from asyncio.log import logger
+#from asyncio.log import logger
 from datetime import datetime
 from importlib import import_module
 import torch
@@ -32,6 +32,8 @@ config = config_module.Configuration()
 #"""
 
 # setting up the logger
+os.environ["WANDB_API_KEY"] = '7170a51cf84ccb0f25a63d6d3a388224cea8b036'
+os.environ["WANDB_RUN_GROUP"] = "miller-lab"
 wandb_run = wandb.init(
     project=config.init['PROJECT_NAME'],
     name=config.init['RUN_NAME'],
@@ -52,8 +54,8 @@ wandb_run = wandb.init(
 # log devices in use, their memory usage, etc.
 
 data_module = MyLightningDataModule(
-    train_data='/home/sasank/Documents/GitRepos/Sasank_JTML_seg/data/alb_false_hpg_fem/train_alb_false_hpg_fem.csv',
-    val_data='/home/sasank/Documents/GitRepos/Sasank_JTML_seg/data/alb_false_hpg_fem/val_alb_false_hpg_fem.csv',
+    train_data='/blue/banks/sasank.desaraju/Sasank_JTML_seg/data/3_2_22_fem/train_3_2_22_fem.csv',
+    val_data='/blue/banks/sasank.desaraju/Sasank_JTML_seg/data/3_2_22_fem/val_3_2_22_fem.csv',
     config=config)
 pose_hrnet = PoseHighResolutionNet(num_key_points=1, num_image_channels=1) # TODO: image_channels=config['IMAGE_CHANNELS']
 model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run) # I can put some data module stuff in this argument if I want

@@ -32,7 +32,7 @@ class Configuration:
         }
 
         self.datamodule = {
-            'IMAGE_DIRECTORY': '/media/sasank/LinuxStorage/Dropbox (UFL)/Canine Kinematics Data/TPLO_Ten_Dogs_grids',
+            'IMAGE_DIRECTORY': '/media/sasank/LlinuxStorage/Dropbox (UFL)/LitJTML/TPLO_Ten_Dogs_grids_2_22_22',
             'BATCH_SIZE': 1,
             'SHUFFLE': True,
             'NUM_WORKERS': -1,
