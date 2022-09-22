@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/test.py", line 51, in <module>
+    model = model.load_from_checkpoint(CKPT_DIR + config.init['RUN_NAME'] + '.ckpt')
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/core/saving.py", line 137, in load_from_checkpoint
+    return _load_from_checkpoint(
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/core/saving.py", line 205, in _load_from_checkpoint
+    return _load_state(cls, checkpoint, strict=strict, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/core/saving.py", line 250, in _load_state
+    obj = cls(**_cls_kwargs)
+TypeError: __init__() missing 2 required positional arguments: 'pose_hrnet' and 'wandb_run'

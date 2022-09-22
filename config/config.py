@@ -20,13 +20,13 @@ class Configuration:
             'FAST_DEV_RUN': False
         }
         self.etl = {
-            'raw_data_file': "data/my_data.csv", \
-            'processed_path': "data",\
+            'RAW_DATA_FILE': "data/my_data.csv", \
+            'DATA_DIR': "data",\
             'VAL_SIZE':  0.2,       # looks sus
             'TEST_SIZE': 0.01,      # I'm not sure these two mean what we think
             #'random_state': np.random.randint(1,50)
             # HHG2TG lol; deterministic to aid reproducibility
-            'random_state': 42,
+            'RANDOM_STATE': 42,
 
             'CUSTOM_TEST_SET': False,
             'TEST_SET_NAME': '/my/test/set.csv'
