@@ -1,0 +1,20 @@
+{
+    "os": "Linux-3.10.0-1062.18.1.el7.x86_64-x86_64-with-glibc2.17",
+    "python": "3.10.6",
+    "heartbeatAt": "2022-09-21T00:00:38.547090",
+    "startedAt": "2022-09-21T00:00:38.090300",
+    "docker": null,
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "gpu_count": 8,
+    "cpu_count": 128,
+    "cuda": null,
+    "args": [
+        "config"
+    ],
+    "state": "running",
+    "program": "/blue/banks/share/JTML/LitJTML/scripts/train.py",
+    "codePath": "scripts/train.py",
+    "host": "c0906a-s11.ufhpc",
+    "username": "sasank.desaraju",
+    "executable": "/blue/banks/sasank.desaraju/Sasank_JTML_seg/conda_envs/envs/sasank-jtml-env/bin/python"
+}

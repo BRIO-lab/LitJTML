@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/blue/banks/share/JTML/LitJTML/scripts/train.py", line 54, in <module>
+    data_module = MyLightningDataModule(
+  File "/blue/banks/share/JTML/LitJTML/scripts/lit_datamodule.py", line 31, in __init__
+    self.val_set = np.genfromtxt(self.val_data, delimiter=',', dtype=str)
+  File "/blue/banks/sasank.desaraju/Sasank_JTML_seg/conda_envs/envs/sasank-jtml-env/lib/python3.10/site-packages/numpy/lib/npyio.py", line 1934, in genfromtxt
+    fid = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/blue/banks/sasank.desaraju/Sasank_JTML_seg/conda_envs/envs/sasank-jtml-env/lib/python3.10/site-packages/numpy/lib/_datasource.py", line 193, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/blue/banks/sasank.desaraju/Sasank_JTML_seg/conda_envs/envs/sasank-jtml-env/lib/python3.10/site-packages/numpy/lib/_datasource.py", line 533, in open
+    raise FileNotFoundError(f"{path} not found.")
+FileNotFoundError: /blue/banks/sasank.desaraju/Sasank_JTML_seg/data/3_2_22_fem/val_3_22_2_fem.csv not found.
