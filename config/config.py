@@ -3,13 +3,21 @@ import torch.nn as nn
 import albumentations as A
 import numpy as np
 import time
+import os
 
 class Configuration:
     def __init__(self):
+        self.temp = {
+            'train_data': '/home/sasank/Documents/GitRepos/Sasank_JTML_seg/data/3_2_22_fem/train_3_2_22_fem.csv',
+            'val_data': '/home/sasank/Documents/GitRepos/Sasank_JTML_seg/data/3_2_22_fem/val_3_2_22_fem.csv',
+            'test_data': '/home/sasank/Documents/GitRepos/Sasank_JTML_seg/data/3_2_22_fem/test_3_2_22_fem.csv'
+        }
         self.init = {
             'PROJECT_NAME': 'LitJTML Development!',
-            'RUN_NAME': 'Testing Local Wandb Logging!' + time.strftime('%Y-%m-%d-%H-%M-%S'),
-            'MODEL_NAME': 'MyModel'
+            'RUN_NAME': 'Testing Local Wandb Logging!',
+            'MODEL_NAME': 'MyModel',
+            'WANDB_RUN_GROUP': 'miller-lab',
+            'FAST_DEV_RUN': False
         }
         self.etl = {
             'raw_data_file': "data/my_data.csv", \
@@ -32,16 +40,17 @@ class Configuration:
         }
 
         self.datamodule = {
-            'IMAGE_DIRECTORY': '/media/sasank/LlinuxStorage/Dropbox (UFL)/LitJTML/TPLO_Ten_Dogs_grids_2_22_22',
+            'IMAGE_DIRECTORY': '/media/sasank/LinuxStorage/Dropbox (UFL)/Canine Kinematics Data/TPLO_Ten_Dogs_grids',
             'BATCH_SIZE': 1,
             'SHUFFLE': True,
-            'NUM_WORKERS': -1,
+            'NUM_WORKERS': os.cpu_count(),
             'PIN_MEMORY': False,
             'SUBSET_PIXELS': True
         }
 
         self.module = {
-            'LOSS_FN': nn.MSELoss()
+            'LOSS_FN': nn.MSELoss(),
+            'NUM_IMAGE_CHANNELS': 1
         }
 
         # hyperparameters for training

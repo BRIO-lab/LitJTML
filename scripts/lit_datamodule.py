@@ -15,20 +15,22 @@ from lit_JTMLDataset import LitJTMLDataset
 
 class MyLightningDataModule(pl.LightningDataModule):
     def __init__(self,
-    train_data,
-    val_data,
     config):
         super().__init__()
 
-        self.train_data = train_data
-        self.val_data = val_data
+        self.train_data = config.temp['train_data']
+        self.val_data = config.temp['val_data']
+        self.test_data = config.temp['test_data']
         self.img_dir = config.datamodule['IMAGE_DIRECTORY']
+
+        self.num_workers = config.datamodule['NUM_WORKERS']
 
         self.batch_size = config.datamodule['BATCH_SIZE']
         # other constants
 
         self.train_set = np.genfromtxt(self.train_data, delimiter=',', dtype=str)
         self.val_set = np.genfromtxt(self.val_data, delimiter=',', dtype=str)
+        self.test_set = np.genfromtxt(self.test_data, delimiter=',', dtype=str)
 
         #check train dataset length and integrity
         #check val dataset length and integrity
@@ -63,9 +65,14 @@ class MyLightningDataModule(pl.LightningDataModule):
     def train_dataloader(self):
         return torch.utils.data.DataLoader(self.training_set,
         batch_size=self.batch_size,
-        num_workers=8)
+        num_workers=self.num_workers)
 
     def val_dataloader(self):
         return torch.utils.data.DataLoader(self.validation_set,
         batch_size=self.batch_size,
-        num_workers=8)
+        num_workers=self.num_workers)
+
+    def test_dataloader(self):
+        return torch.utils.data.DataLoader(self.test_set,
+        batch_size=self.batch_size,
+        num_workers=self.num_workers)
