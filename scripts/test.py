@@ -46,7 +46,7 @@ data_module = MyLightningDataModule(
     config=config)
 pose_hrnet = PoseHighResolutionNet(num_key_points=1, num_image_channels=config.module['NUM_IMAGE_CHANNELS'])
 #model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run).load_from_checkpoint(CKPT_DIR + config.init['RUN_NAME'] + '.ckpt')
-model = MyLightningModule.load_from_checkpoint(CKPT_DIR + config.init['RUN_NAME'] + '.ckpt', pose_hrnet=pose_hrnet, wandb_run=wandb_run)
+model = MyLightningModule.load_from_checkpoint(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt', pose_hrnet=pose_hrnet, wandb_run=wandb_run)
 #model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run)
 #model = model.load_from_checkpoint(CKPT_DIR + config.init['RUN_NAME'] + '.ckpt')
 

@@ -59,6 +59,7 @@ class MyLightningDataModule(pl.LightningDataModule):
 
         self.training_set = LitJTMLDataset(dataset=self.train_set, img_dir=self.img_dir)
         self.validation_set = LitJTMLDataset(dataset=self.val_set, img_dir=self.img_dir)
+        self.test_set = LitJTMLDataset(dataset=self.test_set, img_dir=self.img_dir)
 
         return
 

@@ -1,0 +1,52 @@
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Traceback (most recent call last):
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/test.py", line 68, in <module>
+    trainer.test(model, data_module)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 862, in test
+    return self._call_and_handle_interrupt(self._test_impl, model, dataloaders, ckpt_path, verbose, datamodule)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 650, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 909, in _test_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1166, in _run
+    results = self._run_stage()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1249, in _run_stage
+    return self._run_evaluate()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1295, in _run_evaluate
+    eval_loop_results = self._evaluation_loop.run()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 155, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 127, in advance
+    batch = next(data_fetcher)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/utilities/fetching.py", line 184, in __next__
+    return self.fetching_function()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/utilities/fetching.py", line 263, in fetching_function
+    self._fetch_next_batch(self.dataloader_iter)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/utilities/fetching.py", line 277, in _fetch_next_batch
+    batch = next(iterator)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/_utils.py", line 425, in reraise
+    raise self.exc_type(msg)
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 47, in fetch
+    return self.collate_fn(data)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 62, in default_collate
+    raise TypeError(default_collate_err_msg_format.format(elem.dtype))
+TypeError: default_collate: batch must contain tensors, numpy arrays, numbers, dicts or lists; found <U47
+Testing: 0it [00:00, ?it/s]

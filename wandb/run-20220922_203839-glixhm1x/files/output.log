@@ -1,0 +1,9 @@
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Traceback (most recent call last):
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/test.py", line 68, in <module>
+    trainer.test(model, data_module)
+Testing: 0it [00:00, ?it/s]

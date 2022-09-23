@@ -74,5 +74,5 @@ trainer = pl.Trainer(accelerator='gpu',
     max_epochs=1,
     max_steps=2)
 trainer.fit(model, data_module)
-trainer.save_checkpoint(CKPT_DIR + config.init['RUN_NAME'] + '.ckpt')
-wandb_run.save(CKPT_DIR + config.init['RUN_NAME'] + '.ckpt')
+trainer.save_checkpoint(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt')
+wandb_run.save(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt')
