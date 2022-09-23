@@ -71,8 +71,8 @@ trainer = pl.Trainer(accelerator='gpu',
     default_root_dir=os.getcwd(),
     callbacks=[save_best_val_checkpoint_callback],
     fast_dev_run=config.init['FAST_DEV_RUN'],
-    max_epochs=1,
-    max_steps=2)
+    max_epochs=config.init['MAX_EPOCHS'],
+    max_steps=config.init['MAX_STEPS'])
 trainer.fit(model, data_module)
 trainer.save_checkpoint(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt')
 wandb_run.save(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt')

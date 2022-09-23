@@ -17,7 +17,9 @@ class Configuration:
             'MODEL_NAME': 'MyModel',
             'RUN_NAME': 'Testing Local Wandb Logging!',
             'WANDB_RUN_GROUP': 'miller-lab',
-            'FAST_DEV_RUN': False
+            'FAST_DEV_RUN': False,
+            'MAX_EPOCHS': 2,
+            'MAX_STEPS': -1
         }
         self.etl = {
             'RAW_DATA_FILE': -1, \
