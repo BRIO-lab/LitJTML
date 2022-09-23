@@ -73,4 +73,5 @@ if __name__ == '__main__':
         #dir='logs/'
         #save_dir='/logs/'
     )
+
     main(config, wandb_run)
