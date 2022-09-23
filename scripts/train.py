@@ -67,6 +67,7 @@ save_best_val_checkpoint_callback = ModelCheckpoint(monitor='validation/loss',
                                                     filename=wandb_run.name)
 trainer = pl.Trainer(accelerator='gpu',
     devices=-1,
+    auto_select_gpus=True,
     #logger=wandb_logger,
     default_root_dir=os.getcwd(),
     callbacks=[save_best_val_checkpoint_callback],
