@@ -19,7 +19,8 @@ class Configuration:
             'WANDB_RUN_GROUP': 'miller-lab',
             'FAST_DEV_RUN': False,
             'MAX_EPOCHS': 2,
-            'MAX_STEPS': -1
+            'MAX_STEPS': -1,
+            'STRATEGY': None
         }
         self.etl = {
             'RAW_DATA_FILE': -1, \
