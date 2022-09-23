@@ -13,6 +13,7 @@ from pytorch_lightning.loggers import WandbLogger
 from pytorch_lightning.callbacks import ModelCheckpoint
 from lit_pose_hrnet import MyLightningModule, PoseHighResolutionNet
 from lit_datamodule import MyLightningDataModule
+from callbacks import JTMLCallback
 import utility
 #import click
 import sys
@@ -27,9 +28,7 @@ import wandb
 
 
 def main(config, wandb_run):
-    data_module = MyLightningDataModule(
-        #train_data='/blue/banks/sasank.desaraju/Sasank_JTML_seg/data/3_2_22_fem/train_3_2_22_fem.csv',
-        config=config)
+    data_module = MyLightningDataModule(config=config)
     pose_hrnet = PoseHighResolutionNet(num_key_points=1, num_image_channels=config.module['NUM_IMAGE_CHANNELS'])
     model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run) # I can put some data module stuff in this argument if I want
 
@@ -42,7 +41,7 @@ def main(config, wandb_run):
         auto_select_gpus=True,
         #logger=wandb_logger,
         default_root_dir=os.getcwd(),
-        callbacks=[save_best_val_checkpoint_callback],
+        callbacks=[JTMLCallback(config, wandb_run), save_best_val_checkpoint_callback],
         fast_dev_run=config.init['FAST_DEV_RUN'],
         max_epochs=config.init['MAX_EPOCHS'],
         max_steps=config.init['MAX_STEPS'],
@@ -75,3 +74,5 @@ if __name__ == '__main__':
     )
 
     main(config, wandb_run)
+
+    wandb_run.finish()

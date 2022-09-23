@@ -71,3 +71,5 @@ if __name__ == '__main__':
     )
 
     main(config,wandb_run)
+
+    wandb_run.finish()

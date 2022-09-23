@@ -18,6 +18,14 @@ class MyLightningModule(pl.LightningModule):
         self.loss_fn = torch.nn.BCEWithLogitsLoss()
     
     def forward(self, x):
+        """This performs a forward pass on the dataset
+
+        Args:
+            x (this_type): This is a tensor containing the information yaya
+
+        Returns:
+            the forward pass of the dataset: using a certain type of input
+        """
         return self.pose_hrnet(x)
 
     def configure_optimizers(self):

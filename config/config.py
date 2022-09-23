@@ -15,11 +15,11 @@ class Configuration:
         self.init = {
             'PROJECT_NAME': 'LitJTML Development!',
             'MODEL_NAME': 'MyModel',
-            'RUN_NAME': 'Testing Local Wandb Logging!',
+            'RUN_NAME': 'Setting Up Callbacks!',
             'WANDB_RUN_GROUP': 'miller-lab',
             'FAST_DEV_RUN': False,
-            'MAX_EPOCHS': 2,
-            'MAX_STEPS': -1,
+            'MAX_EPOCHS': 1,
+            'MAX_STEPS': 4,
             'STRATEGY': None
         }
         self.etl = {
