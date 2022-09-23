@@ -45,14 +45,14 @@ class MyLightningModule(pl.LightningModule):
         self.wandb_run.log({'validation/loss': loss})
         return loss
 
-    def test_step(self, validation_batch, batch_idx):
-        val_batch, val_batch_labels = validation_batch['image'], validation_batch['label']
-        x = val_batch
-        val_output = self.pose_hrnet(x)
-        loss = self.loss_fn(val_output, val_batch_labels)
-        #self.log('validation/loss', loss)
-        #self.wandb_run.log('validation/loss', loss, on_step=True)
-        self.wandb_run.log({'validation/loss': loss})
+    def test_step(self, test_batch, batch_idx):
+        test_batch, test_batch_labels = test_batch['image'], test_batch['label']
+        x = test_batch
+        test_output = self.pose_hrnet(x)
+        loss = self.loss_fn(test_output, test_batch_labels)
+        #self.log('test/loss', loss)
+        #self.wandb_run.log('test/loss', loss, on_step=True)
+        self.wandb_run.log({'test/loss': loss})
         return loss
 
 """

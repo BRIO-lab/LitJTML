@@ -14,13 +14,13 @@ class Configuration:
         }
         self.init = {
             'PROJECT_NAME': 'LitJTML Development!',
-            'RUN_NAME': 'Testing Local Wandb Logging!',
             'MODEL_NAME': 'MyModel',
+            'RUN_NAME': 'Testing Local Wandb Logging!',
             'WANDB_RUN_GROUP': 'miller-lab',
             'FAST_DEV_RUN': False
         }
         self.etl = {
-            'RAW_DATA_FILE': "data/my_data.csv", \
+            'RAW_DATA_FILE': -1, \
             'DATA_DIR': "data",\
             'VAL_SIZE':  0.2,       # looks sus
             'TEST_SIZE': 0.01,      # I'm not sure these two mean what we think
