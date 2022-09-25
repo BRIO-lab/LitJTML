@@ -1,0 +1,94 @@
+MyModel
+********************  Starting Initialization!  ********************
+********************  Finished Initialization!  ********************
+********************  Starting Testing!  ********************
+Testing: 0it [00:00, ?it/s]
+Auto select gpus: [0]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py:247: LightningDeprecationWarning: The `on_init_start` callback hook was deprecated in v1.6 and will be removed in v1.8.
+  rank_zero_deprecation(
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py:251: LightningDeprecationWarning: The `on_init_end` callback hook was deprecated in v1.6 and will be removed in v1.8.
+  rank_zero_deprecation("The `on_init_end` callback hook was deprecated in v1.6 and will be removed in v1.8.")
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 650, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 988, in _predict_impl
+    self._data_connector.attach_data(model, predict_dataloaders=dataloaders, datamodule=datamodule)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py", line 148, in attach_data
+    self._copy_trainer_model_properties(model)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py", line 151, in _copy_trainer_model_properties
+    model.trainer = proxy(self.trainer)
+AttributeError: 'dict' object has no attribute 'trainer'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 650, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 909, in _test_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1166, in _run
+    results = self._run_stage()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1249, in _run_stage
+    return self._run_evaluate()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1295, in _run_evaluate
+    eval_loop_results = self._evaluation_loop.run()
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 155, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 149, in advance
+    self._on_evaluation_batch_end(output, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 281, in _on_evaluation_batch_end
+    self.trainer._call_callback_hooks(hook_name, output, *kwargs.values())
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1597, in _call_callback_hooks
+    fn(self, self.lightning_module, *args, **kwargs)
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/callbacks.py", line 143, in on_test_batch_end
+    asdf = trainer.predict(batch)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 949, in predict
+    return self._call_and_handle_interrupt(
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 663, in _call_and_handle_interrupt
+    self._call_callback_hooks("on_exception", exception)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1588, in _call_callback_hooks
+    pl_module = self.lightning_module
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 2124, in lightning_module
+    return self.strategy.lightning_module
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/strategies/strategy.py", line 335, in lightning_module
+    return unwrap_lightning_module(self.model) if self.model is not None else None
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/overrides/base.py", line 110, in unwrap_lightning_module
+    raise TypeError(f"Unwrapping the module did not yield a `LightningModule`, got {type(model)} instead.")
+TypeError: Unwrapping the module did not yield a `LightningModule`, got <class 'dict'> instead.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/test.py", line 78, in <module>
+    main(config,wandb_run)
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/test.py", line 55, in main
+    trainer.test(model, data_module)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 862, in test
+    return self._call_and_handle_interrupt(self._test_impl, model, dataloaders, ckpt_path, verbose, datamodule)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 663, in _call_and_handle_interrupt
+    self._call_callback_hooks("on_exception", exception)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1588, in _call_callback_hooks
+    pl_module = self.lightning_module
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 2124, in lightning_module
+    return self.strategy.lightning_module
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/strategies/strategy.py", line 335, in lightning_module
+    return unwrap_lightning_module(self.model) if self.model is not None else None
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/overrides/base.py", line 110, in unwrap_lightning_module
+    raise TypeError(f"Unwrapping the module did not yield a `LightningModule`, got {type(model)} instead.")
+Testing DataLoader 0:   0%|                                                                                                                                                                 | 0/21 [00:00<?, ?it/s]loss size is torch.Size([])
+tensor(40.0024, device='cuda:0')
+test_output type is torch.Size([1, 1, 1024, 1024])
+batch_idx is 0
+Batch size is torch.Size([1, 1, 1024, 1024])
+Now batch_idx is 0
+Batch size is <class 'dict'>
+Outputs size is <class 'torch.Tensor'>
+Outputs size is torch.Size([])
+tensor(40.0024, device='cuda:0')

@@ -1,0 +1,164 @@
+2022-09-24 14:09:18,210 INFO    StreamThr :22828 [internal.py:wandb_internal():88] W&B internal server running at pid: 22828, started at: 2022-09-24 14:09:18.209639
+2022-09-24 14:09:18,212 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: status
+2022-09-24 14:09:18,215 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: status
+2022-09-24 14:09:18,217 DEBUG   SenderThread:22828 [sender.py:send():301] send: header
+2022-09-24 14:09:18,217 INFO    WriterThread:22828 [datastore.py:open_for_write():75] open: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/run-tihixzpb.wandb
+2022-09-24 14:09:18,227 DEBUG   SenderThread:22828 [sender.py:send():301] send: run
+2022-09-24 14:09:18,561 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: check_version
+2022-09-24 14:09:18,574 INFO    SenderThread:22828 [dir_watcher.py:__init__():216] watching files in: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files
+2022-09-24 14:09:18,575 INFO    SenderThread:22828 [sender.py:_start_run_threads():912] run started: tihixzpb with start time 1664042958.203649
+2022-09-24 14:09:18,575 DEBUG   SenderThread:22828 [sender.py:send():301] send: summary
+2022-09-24 14:09:18,576 INFO    SenderThread:22828 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 14:09:18,577 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: check_version
+2022-09-24 14:09:18,693 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: run_start
+2022-09-24 14:09:18,698 DEBUG   HandlerThread:22828 [meta.py:__init__():34] meta init
+2022-09-24 14:09:18,698 DEBUG   HandlerThread:22828 [meta.py:__init__():49] meta init done
+2022-09-24 14:09:18,698 DEBUG   HandlerThread:22828 [meta.py:probe():215] probe
+2022-09-24 14:09:18,704 DEBUG   HandlerThread:22828 [meta.py:_setup_git():205] setup git
+2022-09-24 14:09:18,713 DEBUG   HandlerThread:22828 [meta.py:_setup_git():212] setup git done
+2022-09-24 14:09:18,713 DEBUG   HandlerThread:22828 [meta.py:_save_pip():53] save pip
+2022-09-24 14:09:18,713 DEBUG   HandlerThread:22828 [meta.py:_save_pip():67] save pip done
+2022-09-24 14:09:18,713 DEBUG   HandlerThread:22828 [meta.py:_save_conda():74] save conda
+2022-09-24 14:09:19,575 INFO    Thread-13 :22828 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/wandb-summary.json
+2022-09-24 14:09:19,575 INFO    Thread-13 :22828 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/requirements.txt
+2022-09-24 14:09:19,576 INFO    Thread-13 :22828 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/conda-environment.yaml
+2022-09-24 14:09:20,929 DEBUG   HandlerThread:22828 [meta.py:_save_conda():84] save conda done
+2022-09-24 14:09:20,930 DEBUG   HandlerThread:22828 [meta.py:probe():253] probe done
+2022-09-24 14:09:20,969 DEBUG   SenderThread:22828 [sender.py:send():301] send: files
+2022-09-24 14:09:20,969 INFO    SenderThread:22828 [sender.py:_save_file():1155] saving file wandb-metadata.json with policy now
+2022-09-24 14:09:20,974 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-24 14:09:20,974 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: stop_status
+2022-09-24 14:09:21,087 DEBUG   SenderThread:22828 [sender.py:send():301] send: telemetry
+2022-09-24 14:09:21,425 INFO    Thread-17 :22828 [upload_job.py:push():139] Uploaded file /tmp/tmp7ctu73onwandb/15v4a5g8-wandb-metadata.json
+2022-09-24 14:09:21,574 INFO    Thread-13 :22828 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/conda-environment.yaml
+2022-09-24 14:09:21,574 INFO    Thread-13 :22828 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/wandb-metadata.json
+2022-09-24 14:09:21,575 INFO    Thread-13 :22828 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/output.log
+2022-09-24 14:09:23,411 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 14:09:23,411 DEBUG   SenderThread:22828 [sender.py:send():301] send: history
+2022-09-24 14:09:23,411 DEBUG   SenderThread:22828 [sender.py:send():301] send: summary
+2022-09-24 14:09:23,412 INFO    SenderThread:22828 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 14:09:23,507 DEBUG   SenderThread:22828 [sender.py:send():301] send: exit
+2022-09-24 14:09:23,507 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 14:09:23,507 INFO    SenderThread:22828 [sender.py:send_exit():437] handling exit code: 1
+2022-09-24 14:09:23,508 INFO    SenderThread:22828 [sender.py:send_exit():439] handling runtime: 4
+2022-09-24 14:09:23,508 INFO    SenderThread:22828 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 14:09:23,508 INFO    SenderThread:22828 [sender.py:send_exit():445] send defer
+2022-09-24 14:09:23,508 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 14:09:23,508 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 14:09:23,508 INFO    HandlerThread:22828 [handler.py:handle_request_defer():161] handle defer: 0
+2022-09-24 14:09:23,509 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: defer
+2022-09-24 14:09:23,509 INFO    SenderThread:22828 [sender.py:send_request_defer():454] handle sender defer: 0
+2022-09-24 14:09:23,509 INFO    SenderThread:22828 [sender.py:transition_state():458] send defer: 1
+2022-09-24 14:09:23,509 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 14:09:23,509 INFO    HandlerThread:22828 [handler.py:handle_request_defer():161] handle defer: 1
+2022-09-24 14:09:23,555 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: defer
+2022-09-24 14:09:23,555 INFO    SenderThread:22828 [sender.py:send_request_defer():454] handle sender defer: 1
+2022-09-24 14:09:23,555 INFO    SenderThread:22828 [sender.py:transition_state():458] send defer: 2
+2022-09-24 14:09:23,555 DEBUG   SenderThread:22828 [sender.py:send():301] send: stats
+2022-09-24 14:09:23,555 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 14:09:23,555 INFO    HandlerThread:22828 [handler.py:handle_request_defer():161] handle defer: 2
+2022-09-24 14:09:23,556 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: defer
+2022-09-24 14:09:23,556 INFO    SenderThread:22828 [sender.py:send_request_defer():454] handle sender defer: 2
+2022-09-24 14:09:23,556 INFO    SenderThread:22828 [sender.py:transition_state():458] send defer: 3
+2022-09-24 14:09:23,556 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 14:09:23,556 INFO    HandlerThread:22828 [handler.py:handle_request_defer():161] handle defer: 3
+2022-09-24 14:09:23,556 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: defer
+2022-09-24 14:09:23,556 INFO    SenderThread:22828 [sender.py:send_request_defer():454] handle sender defer: 3
+2022-09-24 14:09:23,556 INFO    SenderThread:22828 [sender.py:transition_state():458] send defer: 4
+2022-09-24 14:09:23,556 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 14:09:23,556 INFO    HandlerThread:22828 [handler.py:handle_request_defer():161] handle defer: 4
+2022-09-24 14:09:23,557 DEBUG   SenderThread:22828 [sender.py:send():301] send: summary
+2022-09-24 14:09:23,557 INFO    SenderThread:22828 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 14:09:23,557 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: defer
+2022-09-24 14:09:23,557 INFO    SenderThread:22828 [sender.py:send_request_defer():454] handle sender defer: 4
+2022-09-24 14:09:23,557 INFO    SenderThread:22828 [sender.py:transition_state():458] send defer: 5
+2022-09-24 14:09:23,557 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 14:09:23,557 INFO    HandlerThread:22828 [handler.py:handle_request_defer():161] handle defer: 5
+2022-09-24 14:09:23,558 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: defer
+2022-09-24 14:09:23,558 INFO    SenderThread:22828 [sender.py:send_request_defer():454] handle sender defer: 5
+2022-09-24 14:09:23,575 INFO    Thread-13 :22828 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/wandb-summary.json
+2022-09-24 14:09:23,575 INFO    Thread-13 :22828 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/output.log
+2022-09-24 14:09:23,609 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 14:09:23,702 INFO    SenderThread:22828 [sender.py:transition_state():458] send defer: 6
+2022-09-24 14:09:23,702 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 14:09:23,703 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 14:09:23,704 INFO    HandlerThread:22828 [handler.py:handle_request_defer():161] handle defer: 6
+2022-09-24 14:09:23,705 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: defer
+2022-09-24 14:09:23,705 INFO    SenderThread:22828 [sender.py:send_request_defer():454] handle sender defer: 6
+2022-09-24 14:09:23,807 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 14:09:24,575 INFO    Thread-13 :22828 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/config.yaml
+2022-09-24 14:09:25,576 INFO    Thread-13 :22828 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/output.log
+2022-09-24 14:09:26,905 INFO    SenderThread:22828 [sender.py:transition_state():458] send defer: 7
+2022-09-24 14:09:26,905 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 14:09:26,907 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 14:09:26,907 INFO    HandlerThread:22828 [handler.py:handle_request_defer():161] handle defer: 7
+2022-09-24 14:09:26,909 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: defer
+2022-09-24 14:09:26,909 INFO    SenderThread:22828 [sender.py:send_request_defer():454] handle sender defer: 7
+2022-09-24 14:09:26,909 INFO    SenderThread:22828 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-09-24 14:09:27,010 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 14:09:27,577 INFO    Thread-13 :22828 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/output.log
+2022-09-24 14:09:27,579 INFO    SenderThread:22828 [dir_watcher.py:finish():392] scan: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files
+2022-09-24 14:09:27,580 INFO    SenderThread:22828 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/requirements.txt requirements.txt
+2022-09-24 14:09:27,580 INFO    SenderThread:22828 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/output.log output.log
+2022-09-24 14:09:27,581 INFO    SenderThread:22828 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/wandb-summary.json wandb-summary.json
+2022-09-24 14:09:27,588 INFO    SenderThread:22828 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/wandb-metadata.json wandb-metadata.json
+2022-09-24 14:09:27,597 INFO    SenderThread:22828 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/config.yaml config.yaml
+2022-09-24 14:09:27,615 INFO    SenderThread:22828 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/conda-environment.yaml conda-environment.yaml
+2022-09-24 14:09:27,616 INFO    SenderThread:22828 [sender.py:transition_state():458] send defer: 8
+2022-09-24 14:09:27,617 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 14:09:27,619 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 14:09:27,625 INFO    HandlerThread:22828 [handler.py:handle_request_defer():161] handle defer: 8
+2022-09-24 14:09:27,632 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: defer
+2022-09-24 14:09:27,632 INFO    SenderThread:22828 [sender.py:send_request_defer():454] handle sender defer: 8
+2022-09-24 14:09:27,638 INFO    SenderThread:22828 [file_pusher.py:finish():168] shutting down file pusher
+2022-09-24 14:09:27,742 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 14:09:27,743 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 14:09:27,849 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 14:09:27,850 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 14:09:27,952 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 14:09:27,952 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 14:09:28,055 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 14:09:28,056 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 14:09:28,117 INFO    Thread-19 :22828 [upload_job.py:push():139] Uploaded file /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/output.log
+2022-09-24 14:09:28,128 INFO    Thread-21 :22828 [upload_job.py:push():139] Uploaded file /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/config.yaml
+2022-09-24 14:09:28,145 INFO    Thread-22 :22828 [upload_job.py:push():139] Uploaded file /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/conda-environment.yaml
+2022-09-24 14:09:28,148 INFO    Thread-18 :22828 [upload_job.py:push():139] Uploaded file /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/requirements.txt
+2022-09-24 14:09:28,158 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 14:09:28,159 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 14:09:28,167 INFO    Thread-20 :22828 [upload_job.py:push():139] Uploaded file /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/files/wandb-summary.json
+2022-09-24 14:09:28,261 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 14:09:28,262 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 14:09:28,368 INFO    Thread-12 :22828 [sender.py:transition_state():458] send defer: 9
+2022-09-24 14:09:28,370 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 14:09:28,370 INFO    HandlerThread:22828 [handler.py:handle_request_defer():161] handle defer: 9
+2022-09-24 14:09:28,370 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: defer
+2022-09-24 14:09:28,371 INFO    SenderThread:22828 [sender.py:send_request_defer():454] handle sender defer: 9
+2022-09-24 14:09:28,377 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 14:09:28,460 INFO    SenderThread:22828 [sender.py:transition_state():458] send defer: 10
+2022-09-24 14:09:28,460 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 14:09:28,462 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 14:09:28,462 INFO    HandlerThread:22828 [handler.py:handle_request_defer():161] handle defer: 10
+2022-09-24 14:09:28,464 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: defer
+2022-09-24 14:09:28,464 INFO    SenderThread:22828 [sender.py:send_request_defer():454] handle sender defer: 10
+2022-09-24 14:09:28,464 INFO    SenderThread:22828 [sender.py:transition_state():458] send defer: 11
+2022-09-24 14:09:28,467 DEBUG   SenderThread:22828 [sender.py:send():301] send: final
+2022-09-24 14:09:28,468 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 14:09:28,468 DEBUG   SenderThread:22828 [sender.py:send():301] send: footer
+2022-09-24 14:09:28,468 INFO    HandlerThread:22828 [handler.py:handle_request_defer():161] handle defer: 11
+2022-09-24 14:09:28,469 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: defer
+2022-09-24 14:09:28,470 INFO    SenderThread:22828 [sender.py:send_request_defer():454] handle sender defer: 11
+2022-09-24 14:09:28,565 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 14:09:28,566 DEBUG   SenderThread:22828 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 14:09:28,566 INFO    SenderThread:22828 [file_pusher.py:join():173] waiting for file pusher
+2022-09-24 14:09:28,910 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: sampled_history
+2022-09-24 14:09:28,912 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: get_summary
+2022-09-24 14:09:28,913 INFO    MainThread:22828 [wandb_run.py:_footer_history_summary_info():3321] rendering history
+2022-09-24 14:09:28,913 INFO    MainThread:22828 [wandb_run.py:_footer_history_summary_info():3353] rendering summary
+2022-09-24 14:09:28,913 INFO    MainThread:22828 [wandb_run.py:_footer_sync_info():3277] logging synced files
+2022-09-24 14:09:28,914 DEBUG   HandlerThread:22828 [handler.py:handle_request():138] handle_request: shutdown
+2022-09-24 14:09:28,914 INFO    HandlerThread:22828 [handler.py:finish():807] shutting down handler
+2022-09-24 14:09:29,467 INFO    WriterThread:22828 [datastore.py:close():279] close: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_140918-tihixzpb/run-tihixzpb.wandb
+2022-09-24 14:09:29,809 INFO    SenderThread:22828 [sender.py:finish():1315] shutting down sender
+2022-09-24 14:09:29,809 INFO    SenderThread:22828 [file_pusher.py:finish():168] shutting down file pusher
+2022-09-24 14:09:29,810 INFO    SenderThread:22828 [file_pusher.py:join():173] waiting for file pusher
+2022-09-24 14:09:29,919 INFO    MainThread:22828 [internal.py:handle_exit():78] Internal process exited

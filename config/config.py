@@ -15,11 +15,12 @@ class Configuration:
         self.init = {
             'PROJECT_NAME': 'LitJTML Development!',
             'MODEL_NAME': 'MyModel',
-            'RUN_NAME': 'Setting Up Callbacks!',
-            'WANDB_RUN_GROUP': 'miller-lab',
+            #'RUN_NAME': 'Setting Up Wandb Logging!',
+            'RUN_NAME': time.strftime('%Y-%m-%d-%H-%M-%S'),
+            'WANDB_RUN_GROUP': 'HiPerGator',
             'FAST_DEV_RUN': False,
             'MAX_EPOCHS': 1,
-            'MAX_STEPS': 4,
+            'MAX_STEPS': -1,
             'STRATEGY': None
         }
         self.etl = {
@@ -39,11 +40,14 @@ class Configuration:
             'IMAGE_HEIGHT': 1024,
             'IMAGE_WIDTH': 1024,
             'MODEL_TYPE': 'fem',        # how should we do this? not clear this is still best...
-            'IMG_CHANNELS': 1
+            'CLASS_LABELS': {0: 'bone', 1: 'background'},
+            'IMG_CHANNELS': 1,
+            'IMAGE_THRESHOLD': 0
         }
 
         self.datamodule = {
             'IMAGE_DIRECTORY': '/media/sasank/LinuxStorage/Dropbox (UFL)/Canine Kinematics Data/TPLO_Ten_Dogs_grids',
+            'LOAD_CKPT_FILE': None,
             'BATCH_SIZE': 1,
             'SHUFFLE': True,
             'NUM_WORKERS': os.cpu_count(),

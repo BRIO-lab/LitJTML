@@ -13,7 +13,7 @@ from pytorch_lightning.loggers import WandbLogger
 from pytorch_lightning.callbacks import ModelCheckpoint
 from lit_pose_hrnet import MyLightningModule, PoseHighResolutionNet
 from lit_datamodule import MyLightningDataModule
-import utility
+from callbacks import JTMLCallback
 #import click
 import sys
 import os
@@ -30,6 +30,8 @@ def main(config, wandb_run):
     pose_hrnet = PoseHighResolutionNet(num_key_points=1, num_image_channels=config.module['NUM_IMAGE_CHANNELS'])
     #model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run).load_from_checkpoint(CKPT_DIR + config.init['RUN_NAME'] + '.ckpt')
     model = MyLightningModule.load_from_checkpoint(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt', pose_hrnet=pose_hrnet, wandb_run=wandb_run)
+    if config.datamodule['LOAD_CKPT_FILE'] != None:
+        model = MyLightningModule.load_from_checkpoint(config.datamodule['LOAD_CKPT_FILE'], pose_hrnet=pose_hrnet, wandb_run=wandb_run)
     #model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run)
     #model = model.load_from_checkpoint(CKPT_DIR + config.init['RUN_NAME'] + '.ckpt')
 
@@ -42,12 +44,15 @@ def main(config, wandb_run):
 
     trainer = pl.Trainer(accelerator='gpu',
         devices=-1,
+        auto_select_gpus=True,
         #logger=wandb_logger,
         default_root_dir=os.getcwd(),
+        callbacks=[JTMLCallback(config, wandb_run)],
         #callbacks=[save_best_val_checkpoint_callback],
         fast_dev_run=config.init['FAST_DEV_RUN'],
         max_epochs=config.init['MAX_EPOCHS'],
-        max_steps=config.init['MAX_STEPS'])
+        max_steps=config.init['MAX_STEPS'],
+        strategy=config.init['STRATEGY'])
     trainer.test(model, data_module)
 
 if __name__ == '__main__':
@@ -63,10 +68,11 @@ if __name__ == '__main__':
     CKPT_DIR = os.getcwd() + '/checkpoints/'
 
     # setting up the logger
-    os.environ["WANDB_RUN_GROUP"] = config.init['WANDB_RUN_GROUP']
+    os.environ['WANDB_RUN_GROUP'] = config.init['WANDB_RUN_GROUP']
     wandb_run = wandb.init(
         project=config.init['PROJECT_NAME'],
         name=config.init['RUN_NAME'],
+        group=config.init['WANDB_RUN_GROUP'],
         job_type='test'
     )
 

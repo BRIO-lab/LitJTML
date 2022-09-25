@@ -26,6 +26,7 @@ class MyLightningDataModule(pl.LightningDataModule):
         self.num_workers = config.datamodule['NUM_WORKERS']
 
         self.batch_size = config.datamodule['BATCH_SIZE']
+        #self.log(batch_size=self.batch_size)
         # other constants
 
         self.train_set = np.genfromtxt(self.train_data, delimiter=',', dtype=str)

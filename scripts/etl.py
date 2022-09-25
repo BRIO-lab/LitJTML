@@ -17,7 +17,6 @@ from pytorch_lightning.loggers import WandbLogger
 from pytorch_lightning.callbacks import ModelCheckpoint
 from lit_pose_hrnet import MyLightningModule, PoseHighResolutionNet
 from lit_datamodule import MyLightningDataModule
-import utility
 #import click
 import sys
 import os

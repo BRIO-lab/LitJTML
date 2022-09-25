@@ -1,0 +1,893 @@
+2022-09-24 18:58:50,434 INFO    StreamThr :63701 [internal.py:wandb_internal():88] W&B internal server running at pid: 63701, started at: 2022-09-24 18:58:50.432396
+2022-09-24 18:58:50,437 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: status
+2022-09-24 18:58:50,440 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: status
+2022-09-24 18:58:50,442 DEBUG   SenderThread:63701 [sender.py:send():301] send: header
+2022-09-24 18:58:50,442 INFO    WriterThread:63701 [datastore.py:open_for_write():75] open: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/run-qvor1buj.wandb
+2022-09-24 18:58:50,456 DEBUG   SenderThread:63701 [sender.py:send():301] send: run
+2022-09-24 18:58:50,753 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: check_version
+2022-09-24 18:58:50,766 INFO    SenderThread:63701 [dir_watcher.py:__init__():216] watching files in: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files
+2022-09-24 18:58:50,767 INFO    SenderThread:63701 [sender.py:_start_run_threads():912] run started: qvor1buj with start time 1664060330.425273
+2022-09-24 18:58:50,767 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:50,768 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:50,769 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: check_version
+2022-09-24 18:58:50,894 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: run_start
+2022-09-24 18:58:50,899 DEBUG   HandlerThread:63701 [meta.py:__init__():34] meta init
+2022-09-24 18:58:50,899 DEBUG   HandlerThread:63701 [meta.py:__init__():49] meta init done
+2022-09-24 18:58:50,899 DEBUG   HandlerThread:63701 [meta.py:probe():215] probe
+2022-09-24 18:58:50,905 DEBUG   HandlerThread:63701 [meta.py:_setup_git():205] setup git
+2022-09-24 18:58:50,915 DEBUG   HandlerThread:63701 [meta.py:_setup_git():212] setup git done
+2022-09-24 18:58:50,916 DEBUG   HandlerThread:63701 [meta.py:_save_pip():53] save pip
+2022-09-24 18:58:50,916 DEBUG   HandlerThread:63701 [meta.py:_save_pip():67] save pip done
+2022-09-24 18:58:50,916 DEBUG   HandlerThread:63701 [meta.py:_save_conda():74] save conda
+2022-09-24 18:58:51,767 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json
+2022-09-24 18:58:51,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/requirements.txt
+2022-09-24 18:58:51,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/conda-environment.yaml
+2022-09-24 18:58:53,099 DEBUG   HandlerThread:63701 [meta.py:_save_conda():84] save conda done
+2022-09-24 18:58:53,099 DEBUG   HandlerThread:63701 [meta.py:probe():253] probe done
+2022-09-24 18:58:53,133 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:53,133 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-metadata.json with policy now
+2022-09-24 18:58:53,137 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-24 18:58:53,137 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: stop_status
+2022-09-24 18:58:53,250 DEBUG   SenderThread:63701 [sender.py:send():301] send: telemetry
+2022-09-24 18:58:53,551 INFO    Thread-17 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/xreimfp1-wandb-metadata.json
+2022-09-24 18:58:53,767 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/conda-environment.yaml
+2022-09-24 18:58:53,767 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-metadata.json
+2022-09-24 18:58:55,555 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:55,556 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:55,556 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:55,558 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:55,767 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json
+2022-09-24 18:58:55,767 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/output.log
+2022-09-24 18:58:55,928 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:55,928 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_1_767918c9f06f286c4818.png with policy now
+2022-09-24 18:58:55,929 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:55,929 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:55,929 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:55,938 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:55,979 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:55,979 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:55,979 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_2_749ff44542282eaa33f0.png with policy now
+2022-09-24 18:58:55,979 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:55,980 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:55,983 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:56,025 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:56,025 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:56,026 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_3_903093166fa7907b8a76.png with policy now
+2022-09-24 18:58:56,026 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:56,026 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:56,027 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:56,190 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:56,191 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:56,191 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:56,191 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:56,330 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:56,330 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:56,331 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_5_5507c06cf1fe7553f058.png with policy now
+2022-09-24 18:58:56,331 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:56,332 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:56,335 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:56,378 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:56,378 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:56,378 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_6_218f1661cd76bdc08273.png with policy now
+2022-09-24 18:58:56,379 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:56,379 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:56,379 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:56,408 INFO    Thread-18 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/25fdosrc-media/images/test_input_image_1_767918c9f06f286c4818.png
+2022-09-24 18:58:56,410 INFO    Thread-19 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1fjof9j7-media/images/test_input_label_2_749ff44542282eaa33f0.png
+2022-09-24 18:58:56,430 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:56,430 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:56,431 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_7_8c590000019fc0e68515.png with policy now
+2022-09-24 18:58:56,431 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:56,431 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:56,432 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:56,471 INFO    Thread-20 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/33uzjnza-media/images/test_output_image_3_903093166fa7907b8a76.png
+2022-09-24 18:58:56,587 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:56,587 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:56,587 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:56,588 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:56,727 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:56,727 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_9_5a3e2df44e28aff4c9b5.png with policy now
+2022-09-24 18:58:56,727 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:56,728 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:56,728 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:56,732 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:56,767 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json
+2022-09-24 18:58:56,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_1_767918c9f06f286c4818.png
+2022-09-24 18:58:56,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_6_218f1661cd76bdc08273.png
+2022-09-24 18:58:56,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_2_749ff44542282eaa33f0.png
+2022-09-24 18:58:56,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_5_5507c06cf1fe7553f058.png
+2022-09-24 18:58:56,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_7_8c590000019fc0e68515.png
+2022-09-24 18:58:56,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_9_5a3e2df44e28aff4c9b5.png
+2022-09-24 18:58:56,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_3_903093166fa7907b8a76.png
+2022-09-24 18:58:56,772 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images
+2022-09-24 18:58:56,772 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media
+2022-09-24 18:58:56,782 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:56,782 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_10_ed824eae56939ef8bcf9.png with policy now
+2022-09-24 18:58:56,782 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:56,783 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:56,783 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:56,783 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:56,788 INFO    Thread-22 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3ebm02ly-media/images/test_input_label_6_218f1661cd76bdc08273.png
+2022-09-24 18:58:56,825 INFO    Thread-21 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/16vu8jhh-media/images/test_input_image_5_5507c06cf1fe7553f058.png
+2022-09-24 18:58:56,832 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:56,833 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_11_84a4a2eebea3d8bf8d15.png with policy now
+2022-09-24 18:58:56,834 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:56,837 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:56,838 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:56,838 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:56,874 INFO    Thread-23 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3ag8ac5p-media/images/test_output_image_7_8c590000019fc0e68515.png
+2022-09-24 18:58:57,004 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:57,004 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:57,005 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:57,005 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:57,139 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:57,139 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_13_da1ca28ba6093eb6b9bb.png with policy now
+2022-09-24 18:58:57,139 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:57,140 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:57,140 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:57,140 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:57,185 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:57,185 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:57,186 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_14_88ecc81fd44d1a9db2e9.png with policy now
+2022-09-24 18:58:57,186 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:57,186 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:57,186 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:57,197 INFO    Thread-28 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/28dxtcc7-media/images/test_input_label_10_ed824eae56939ef8bcf9.png
+2022-09-24 18:58:57,232 INFO    Thread-29 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/23v0x8ms-media/images/test_input_label_6_218f1661cd76bdc08273.png
+2022-09-24 18:58:57,237 INFO    Thread-26 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/32c8meok-media/images/test_input_label_2_749ff44542282eaa33f0.png
+2022-09-24 18:58:57,242 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:57,242 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_15_84573062199ed21f6ea0.png with policy now
+2022-09-24 18:58:57,242 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:57,243 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:57,243 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:57,243 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:57,251 INFO    Thread-24 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/p5avdeb5-media/images/test_input_image_9_5a3e2df44e28aff4c9b5.png
+2022-09-24 18:58:57,268 INFO    Thread-31 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/ody8g6oh-media/images/test_output_image_11_84a4a2eebea3d8bf8d15.png
+2022-09-24 18:58:57,279 INFO    Thread-25 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3t6bix1i-media/images/test_input_image_1_767918c9f06f286c4818.png
+2022-09-24 18:58:57,286 INFO    Thread-27 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1xbh72w2-media/images/test_output_image_3_903093166fa7907b8a76.png
+2022-09-24 18:58:57,324 INFO    Thread-30 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2e7y0xce-media/images/test_input_image_5_5507c06cf1fe7553f058.png
+2022-09-24 18:58:57,377 INFO    Thread-32 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/16x2grha-media/images/test_output_image_7_8c590000019fc0e68515.png
+2022-09-24 18:58:57,407 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:57,407 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:57,407 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:57,408 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:57,542 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:57,543 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_17_8bb6068b422063fc602e.png with policy now
+2022-09-24 18:58:57,543 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:57,543 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:57,543 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:57,544 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:57,584 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:57,584 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_18_3935b200ffe462e4bf90.png with policy now
+2022-09-24 18:58:57,584 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:57,585 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:57,585 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:57,587 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:57,609 INFO    Thread-34 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1o8mq9r7-media/images/test_input_label_14_88ecc81fd44d1a9db2e9.png
+2022-09-24 18:58:57,628 INFO    Thread-33 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1cmg06zt-media/images/test_input_image_13_da1ca28ba6093eb6b9bb.png
+2022-09-24 18:58:57,634 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:57,634 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_19_f6713fff2577725b20fc.png with policy now
+2022-09-24 18:58:57,634 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:57,635 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:57,635 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:57,636 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:57,722 INFO    Thread-35 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2912vlgk-media/images/test_output_image_15_84573062199ed21f6ea0.png
+2022-09-24 18:58:57,757 INFO    Thread-36 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1pqtyjl2-media/images/test_input_image_9_5a3e2df44e28aff4c9b5.png
+2022-09-24 18:58:57,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json
+2022-09-24 18:58:57,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/output.log
+2022-09-24 18:58:57,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_17_8bb6068b422063fc602e.png
+2022-09-24 18:58:57,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_13_da1ca28ba6093eb6b9bb.png
+2022-09-24 18:58:57,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_19_f6713fff2577725b20fc.png
+2022-09-24 18:58:57,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_14_88ecc81fd44d1a9db2e9.png
+2022-09-24 18:58:57,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_15_84573062199ed21f6ea0.png
+2022-09-24 18:58:57,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_18_3935b200ffe462e4bf90.png
+2022-09-24 18:58:57,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_11_84a4a2eebea3d8bf8d15.png
+2022-09-24 18:58:57,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_10_ed824eae56939ef8bcf9.png
+2022-09-24 18:58:57,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images
+2022-09-24 18:58:57,792 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:57,792 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:57,792 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:57,793 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:57,923 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:57,923 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_21_0d7681f4173576098223.png with policy now
+2022-09-24 18:58:57,924 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:57,924 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:57,924 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:57,925 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:57,967 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:57,967 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_22_9503b4c94796767e3667.png with policy now
+2022-09-24 18:58:57,968 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:57,968 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:57,968 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:57,969 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:58,019 INFO    Thread-37 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/15lwonpo-media/images/test_input_image_17_8bb6068b422063fc602e.png
+2022-09-24 18:58:58,025 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:58,025 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:58,025 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_23_3c953bfa52f6c48eb08d.png with policy now
+2022-09-24 18:58:58,026 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:58,026 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:58,026 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:58,063 INFO    Thread-38 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/22ux18wl-media/images/test_input_label_18_3935b200ffe462e4bf90.png
+2022-09-24 18:58:58,068 INFO    Thread-39 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/wwqb9iam-media/images/test_output_image_19_f6713fff2577725b20fc.png
+2022-09-24 18:58:58,187 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:58,188 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:58,188 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:58,188 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:58,229 INFO    Thread-41 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/15762nvu-media/images/test_input_label_14_88ecc81fd44d1a9db2e9.png
+2022-09-24 18:58:58,253 INFO    Thread-42 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/atz1y8za-media/images/test_output_image_15_84573062199ed21f6ea0.png
+2022-09-24 18:58:58,276 INFO    Thread-43 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2uqe6azi-media/images/test_output_image_11_84a4a2eebea3d8bf8d15.png
+2022-09-24 18:58:58,283 INFO    Thread-44 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/28fadt9q-media/images/test_input_label_10_ed824eae56939ef8bcf9.png
+2022-09-24 18:58:58,289 INFO    Thread-40 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/7q4tc858-media/images/test_input_image_13_da1ca28ba6093eb6b9bb.png
+2022-09-24 18:58:58,321 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:58,321 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_25_5bb6582cc696669bbaa7.png with policy now
+2022-09-24 18:58:58,321 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:58,321 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:58,322 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:58,322 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:58,370 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:58,370 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_26_4a424faaefadcf65bf06.png with policy now
+2022-09-24 18:58:58,370 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:58,371 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:58,371 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:58,372 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:58,420 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:58,421 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:58,421 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_27_e2ad489c019177074464.png with policy now
+2022-09-24 18:58:58,421 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:58,422 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:58,422 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:58,430 INFO    Thread-46 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/c6l1mtkl-media/images/test_input_label_22_9503b4c94796767e3667.png
+2022-09-24 18:58:58,487 INFO    Thread-48 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3hkrgns5-media/images/test_output_image_23_3c953bfa52f6c48eb08d.png
+2022-09-24 18:58:58,487 INFO    Thread-45 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/t8xay9wq-media/images/test_input_image_21_0d7681f4173576098223.png
+2022-09-24 18:58:58,519 INFO    Thread-47 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3jdowdeu-media/images/test_input_image_17_8bb6068b422063fc602e.png
+2022-09-24 18:58:58,539 INFO    Thread-49 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/vn8s1mvs-media/images/test_input_label_18_3935b200ffe462e4bf90.png
+2022-09-24 18:58:58,581 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:58,581 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:58,581 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:58,581 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:58,697 INFO    Thread-50 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/34hjhnup-media/images/test_output_image_19_f6713fff2577725b20fc.png
+2022-09-24 18:58:58,708 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:58,708 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_29_97ea98db1911589b8bd4.png with policy now
+2022-09-24 18:58:58,709 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:58,709 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:58,709 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:58,710 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:58,753 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:58,753 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_30_98a7b6d0d23eb0050024.png with policy now
+2022-09-24 18:58:58,753 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:58,754 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:58,754 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:58,754 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:58,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json
+2022-09-24 18:58:58,768 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_26_4a424faaefadcf65bf06.png
+2022-09-24 18:58:58,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_30_98a7b6d0d23eb0050024.png
+2022-09-24 18:58:58,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_23_3c953bfa52f6c48eb08d.png
+2022-09-24 18:58:58,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_27_e2ad489c019177074464.png
+2022-09-24 18:58:58,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_25_5bb6582cc696669bbaa7.png
+2022-09-24 18:58:58,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_22_9503b4c94796767e3667.png
+2022-09-24 18:58:58,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_29_97ea98db1911589b8bd4.png
+2022-09-24 18:58:58,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_21_0d7681f4173576098223.png
+2022-09-24 18:58:58,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images
+2022-09-24 18:58:58,786 INFO    Thread-52 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3d76hvy2-media/images/test_input_label_26_4a424faaefadcf65bf06.png
+2022-09-24 18:58:58,811 INFO    Thread-51 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/35v84rzs-media/images/test_input_image_25_5bb6582cc696669bbaa7.png
+2022-09-24 18:58:58,812 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:58,813 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:58,813 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_31_8fdca95fb70c2c7035f5.png with policy now
+2022-09-24 18:58:58,813 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:58,813 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:58,813 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:58,868 INFO    Thread-53 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/13smtg1f-media/images/test_output_image_27_e2ad489c019177074464.png
+2022-09-24 18:58:58,968 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:58,968 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:58,968 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:58,969 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:59,093 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:59,093 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:59,093 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_33_8b96a59dd9ce95186f35.png with policy now
+2022-09-24 18:58:59,094 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:59,094 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:59,097 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:59,134 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:59,134 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:59,134 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_34_ed473a4e132f9ff08386.png with policy now
+2022-09-24 18:58:59,135 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:59,135 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:59,135 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:59,168 INFO    Thread-55 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/5lod1i6v-media/images/test_input_label_30_98a7b6d0d23eb0050024.png
+2022-09-24 18:58:59,172 INFO    Thread-54 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/ivefxjmh-media/images/test_input_image_29_97ea98db1911589b8bd4.png
+2022-09-24 18:58:59,182 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:59,183 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:59,183 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_35_cab44482c40810848d72.png with policy now
+2022-09-24 18:58:59,183 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:59,183 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:59,184 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:59,233 INFO    Thread-59 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/11z2wts8-media/images/test_input_label_26_4a424faaefadcf65bf06.png
+2022-09-24 18:58:59,234 INFO    Thread-57 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3hhifhpd-media/images/test_input_label_22_9503b4c94796767e3667.png
+2022-09-24 18:58:59,267 INFO    Thread-56 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2wcllzdn-media/images/test_output_image_23_3c953bfa52f6c48eb08d.png
+2022-09-24 18:58:59,270 INFO    Thread-60 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1c4432wj-media/images/test_output_image_31_8fdca95fb70c2c7035f5.png
+2022-09-24 18:58:59,298 INFO    Thread-58 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/gvrqbf7j-media/images/test_input_image_21_0d7681f4173576098223.png
+2022-09-24 18:58:59,338 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:59,339 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:59,339 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:59,339 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:59,363 INFO    Thread-61 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/i7pvt1fh-media/images/test_output_image_27_e2ad489c019177074464.png
+2022-09-24 18:58:59,466 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:59,466 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:59,466 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_37_5ef873781ea98e2d6398.png with policy now
+2022-09-24 18:58:59,467 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:59,467 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:59,467 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:59,517 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:59,517 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:59,518 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_38_c36f46e011e8a559aaa7.png with policy now
+2022-09-24 18:58:59,518 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:59,518 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:59,518 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:59,558 INFO    Thread-63 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3jr8ot4g-media/images/test_input_label_34_ed473a4e132f9ff08386.png
+2022-09-24 18:58:59,562 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:59,563 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_39_dd60acb71af6bd950cb5.png with policy now
+2022-09-24 18:58:59,563 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:59,564 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:59,564 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:59,565 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:59,597 INFO    Thread-62 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1ctxk8gx-media/images/test_input_image_33_8b96a59dd9ce95186f35.png
+2022-09-24 18:58:59,662 INFO    Thread-66 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2u2lb07u-media/images/test_output_image_35_cab44482c40810848d72.png
+2022-09-24 18:58:59,671 INFO    Thread-64 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/11jklq4x-media/images/test_input_image_25_5bb6582cc696669bbaa7.png
+2022-09-24 18:58:59,681 INFO    Thread-67 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3huff61d-media/images/test_input_label_30_98a7b6d0d23eb0050024.png
+2022-09-24 18:58:59,685 INFO    Thread-65 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2e0024l1-media/images/test_input_image_29_97ea98db1911589b8bd4.png
+2022-09-24 18:58:59,724 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:59,725 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:59,725 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:59,725 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:59,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json
+2022-09-24 18:58:59,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/output.log
+2022-09-24 18:58:59,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_34_ed473a4e132f9ff08386.png
+2022-09-24 18:58:59,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_33_8b96a59dd9ce95186f35.png
+2022-09-24 18:58:59,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_35_cab44482c40810848d72.png
+2022-09-24 18:58:59,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_31_8fdca95fb70c2c7035f5.png
+2022-09-24 18:58:59,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_37_5ef873781ea98e2d6398.png
+2022-09-24 18:58:59,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_39_dd60acb71af6bd950cb5.png
+2022-09-24 18:58:59,773 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_38_c36f46e011e8a559aaa7.png
+2022-09-24 18:58:59,773 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images
+2022-09-24 18:58:59,866 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:59,866 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:59,866 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_41_630dff02754237563ab0.png with policy now
+2022-09-24 18:58:59,867 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:59,867 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:59,867 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:59,922 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:59,922 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:59,922 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_42_8358402a7f08f88667b1.png with policy now
+2022-09-24 18:58:59,923 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:59,923 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:59,923 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:59,941 INFO    Thread-68 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/pw25kc1o-media/images/test_input_image_37_5ef873781ea98e2d6398.png
+2022-09-24 18:58:59,944 INFO    Thread-69 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/30k0h2bv-media/images/test_input_label_38_c36f46e011e8a559aaa7.png
+2022-09-24 18:58:59,980 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:58:59,981 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:58:59,981 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_43_852a76999bb567f5f00a.png with policy now
+2022-09-24 18:58:59,982 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:58:59,982 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:58:59,982 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:58:59,995 INFO    Thread-70 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1v5r74os-media/images/test_output_image_39_dd60acb71af6bd950cb5.png
+2022-09-24 18:59:00,145 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:00,146 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:00,146 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:00,146 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:00,230 INFO    Thread-71 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1zlwj4s9-media/images/test_input_label_34_ed473a4e132f9ff08386.png
+2022-09-24 18:59:00,270 INFO    Thread-74 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2quiyn5v-media/images/test_output_image_31_8fdca95fb70c2c7035f5.png
+2022-09-24 18:59:00,274 INFO    Thread-73 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2o0j7h06-media/images/test_output_image_35_cab44482c40810848d72.png
+2022-09-24 18:59:00,276 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:00,276 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_45_77d813e78dee8776e4a5.png with policy now
+2022-09-24 18:59:00,276 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:00,277 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:00,277 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:00,277 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:00,303 INFO    Thread-72 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/q8334cg4-media/images/test_input_image_33_8b96a59dd9ce95186f35.png
+2022-09-24 18:59:00,316 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:00,317 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:00,317 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_46_799807ecdfbeff7cdf4b.png with policy now
+2022-09-24 18:59:00,317 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:00,318 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:00,318 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:00,332 INFO    Thread-75 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1ozv5qls-media/images/test_input_image_41_630dff02754237563ab0.png
+2022-09-24 18:59:00,346 INFO    Thread-76 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2lcjycbi-media/images/test_input_label_42_8358402a7f08f88667b1.png
+2022-09-24 18:59:00,366 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:00,366 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_47_ba0fac5c8df0238799d3.png with policy now
+2022-09-24 18:59:00,366 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:00,367 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:00,367 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:00,367 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:00,431 INFO    Thread-78 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3flkaold-media/images/test_output_image_43_852a76999bb567f5f00a.png
+2022-09-24 18:59:00,437 INFO    Thread-79 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3gg8ouk0-media/images/test_input_label_38_c36f46e011e8a559aaa7.png
+2022-09-24 18:59:00,441 INFO    Thread-77 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/l4w6glz8-media/images/test_input_image_37_5ef873781ea98e2d6398.png
+2022-09-24 18:59:00,524 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:00,524 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:00,524 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:00,525 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:00,649 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:00,649 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_49_598427563215c9816791.png with policy now
+2022-09-24 18:59:00,650 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:00,650 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:00,650 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:00,651 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:00,691 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:00,691 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:00,691 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_50_fbf33992dcfe59586340.png with policy now
+2022-09-24 18:59:00,691 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:00,692 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:00,692 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:00,697 INFO    Thread-80 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/32ru0cj6-media/images/test_output_image_39_dd60acb71af6bd950cb5.png
+2022-09-24 18:59:00,726 INFO    Thread-82 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2ceod4sq-media/images/test_input_label_46_799807ecdfbeff7cdf4b.png
+2022-09-24 18:59:00,735 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:00,735 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:00,735 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_51_cbb16b704ed6f5293adc.png with policy now
+2022-09-24 18:59:00,735 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:00,736 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:00,736 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:00,762 INFO    Thread-81 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3osjm7p4-media/images/test_input_image_45_77d813e78dee8776e4a5.png
+2022-09-24 18:59:00,769 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json
+2022-09-24 18:59:00,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_46_799807ecdfbeff7cdf4b.png
+2022-09-24 18:59:00,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_42_8358402a7f08f88667b1.png
+2022-09-24 18:59:00,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_49_598427563215c9816791.png
+2022-09-24 18:59:00,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_50_fbf33992dcfe59586340.png
+2022-09-24 18:59:00,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_47_ba0fac5c8df0238799d3.png
+2022-09-24 18:59:00,774 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_41_630dff02754237563ab0.png
+2022-09-24 18:59:00,776 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_45_77d813e78dee8776e4a5.png
+2022-09-24 18:59:00,778 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_43_852a76999bb567f5f00a.png
+2022-09-24 18:59:00,782 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_51_cbb16b704ed6f5293adc.png
+2022-09-24 18:59:00,783 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images
+2022-09-24 18:59:00,817 INFO    Thread-83 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3vpeor5i-media/images/test_output_image_47_ba0fac5c8df0238799d3.png
+2022-09-24 18:59:00,889 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:00,890 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:00,890 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:00,890 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:01,016 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:01,016 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:01,017 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_53_cc3bf3c49404efd89364.png with policy now
+2022-09-24 18:59:01,017 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:01,017 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:01,017 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:01,059 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:01,059 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:01,059 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_54_b80898d07548148be05c.png with policy now
+2022-09-24 18:59:01,060 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:01,060 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:01,060 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:01,112 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:01,112 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:01,112 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_55_973f28ff026511a491c8.png with policy now
+2022-09-24 18:59:01,113 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:01,113 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:01,113 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:01,128 INFO    Thread-85 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2hed2llk-media/images/test_input_label_50_fbf33992dcfe59586340.png
+2022-09-24 18:59:01,167 INFO    Thread-86 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3vtd641n-media/images/test_output_image_51_cbb16b704ed6f5293adc.png
+2022-09-24 18:59:01,197 INFO    Thread-84 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/lh1gac1s-media/images/test_input_image_49_598427563215c9816791.png
+2022-09-24 18:59:01,225 INFO    Thread-87 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3cf3lrx6-media/images/test_input_label_46_799807ecdfbeff7cdf4b.png
+2022-09-24 18:59:01,228 INFO    Thread-88 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/w8e9r4eb-media/images/test_input_label_42_8358402a7f08f88667b1.png
+2022-09-24 18:59:01,255 INFO    Thread-91 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1pmr9e21-media/images/test_output_image_43_852a76999bb567f5f00a.png
+2022-09-24 18:59:01,269 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:01,270 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:01,270 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:01,270 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:01,299 INFO    Thread-89 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1pyifmh6-media/images/test_input_image_41_630dff02754237563ab0.png
+2022-09-24 18:59:01,308 INFO    Thread-90 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/bolfmgie-media/images/test_input_image_45_77d813e78dee8776e4a5.png
+2022-09-24 18:59:01,399 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:01,399 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_57_f250687444acb41bcbda.png with policy now
+2022-09-24 18:59:01,399 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:01,399 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:01,400 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:01,400 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:01,440 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:01,440 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:01,440 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_58_5f0d565f7c97cfa3694a.png with policy now
+2022-09-24 18:59:01,441 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:01,441 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:01,441 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:01,477 INFO    Thread-93 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1t4ekygj-media/images/test_input_label_54_b80898d07548148be05c.png
+2022-09-24 18:59:01,491 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:01,491 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:01,494 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_59_a28bec38e3de37451bf6.png with policy now
+2022-09-24 18:59:01,494 INFO    Thread-92 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3lyn3bsi-media/images/test_input_image_53_cc3bf3c49404efd89364.png
+2022-09-24 18:59:01,495 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:01,495 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:01,495 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:01,548 INFO    Thread-94 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3mxsimve-media/images/test_output_image_55_973f28ff026511a491c8.png
+2022-09-24 18:59:01,570 INFO    Thread-95 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1pkbknol-media/images/test_input_label_50_fbf33992dcfe59586340.png
+2022-09-24 18:59:01,632 INFO    Thread-96 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/34rvgdqp-media/images/test_output_image_47_ba0fac5c8df0238799d3.png
+2022-09-24 18:59:01,651 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:01,652 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:01,652 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:01,652 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:01,665 INFO    Thread-97 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/15pexdvl-media/images/test_output_image_51_cbb16b704ed6f5293adc.png
+2022-09-24 18:59:01,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json
+2022-09-24 18:59:01,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/output.log
+2022-09-24 18:59:01,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_53_cc3bf3c49404efd89364.png
+2022-09-24 18:59:01,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_59_a28bec38e3de37451bf6.png
+2022-09-24 18:59:01,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_57_f250687444acb41bcbda.png
+2022-09-24 18:59:01,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_58_5f0d565f7c97cfa3694a.png
+2022-09-24 18:59:01,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_55_973f28ff026511a491c8.png
+2022-09-24 18:59:01,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_54_b80898d07548148be05c.png
+2022-09-24 18:59:01,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images
+2022-09-24 18:59:01,784 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:01,784 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_61_810c38e763e2fe302326.png with policy now
+2022-09-24 18:59:01,784 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:01,785 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:01,785 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:01,785 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:01,826 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:01,827 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:01,827 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_62_fd3b9f20e5ee19d5453c.png with policy now
+2022-09-24 18:59:01,827 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:01,828 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:01,828 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:01,849 INFO    Thread-98 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2a2pmklr-media/images/test_input_image_49_598427563215c9816791.png
+2022-09-24 18:59:01,865 INFO    Thread-99 :63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1x0xkxyp-media/images/test_input_image_57_f250687444acb41bcbda.png
+2022-09-24 18:59:01,870 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:01,870 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:01,870 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_63_878ad23a67e1a1c5daac.png with policy now
+2022-09-24 18:59:01,871 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:01,871 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:01,872 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:01,889 INFO    Thread-100:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/cinsp7xx-media/images/test_input_label_58_5f0d565f7c97cfa3694a.png
+2022-09-24 18:59:01,926 INFO    Thread-101:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/h53myywh-media/images/test_output_image_59_a28bec38e3de37451bf6.png
+2022-09-24 18:59:02,048 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:02,048 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:02,049 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:02,049 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:02,178 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:02,179 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:02,179 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_65_6a623f29d342c7fb872c.png with policy now
+2022-09-24 18:59:02,179 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:02,179 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:02,180 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:02,222 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:02,222 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:02,223 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_66_dca6e90541eb64e9b610.png with policy now
+2022-09-24 18:59:02,223 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:02,225 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:02,226 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:02,235 INFO    Thread-106:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/ptnjfdx7-media/images/test_input_label_62_fd3b9f20e5ee19d5453c.png
+2022-09-24 18:59:02,254 INFO    Thread-104:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3gbfl4zu-media/images/test_input_label_54_b80898d07548148be05c.png
+2022-09-24 18:59:02,264 INFO    Thread-103:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1zskb4d0-media/images/test_output_image_55_973f28ff026511a491c8.png
+2022-09-24 18:59:02,267 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:02,268 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_67_4ec7707dc92f482554bf.png with policy now
+2022-09-24 18:59:02,268 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:02,269 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:02,269 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:02,269 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:02,273 INFO    Thread-105:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3ougl8pz-media/images/test_input_image_61_810c38e763e2fe302326.png
+2022-09-24 18:59:02,276 INFO    Thread-102:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/16ln9k2k-media/images/test_input_image_53_cc3bf3c49404efd89364.png
+2022-09-24 18:59:02,318 INFO    Thread-108:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3uno2wzn-media/images/test_output_image_63_878ad23a67e1a1c5daac.png
+2022-09-24 18:59:02,366 INFO    Thread-107:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1jeas3o2-media/images/test_input_image_57_f250687444acb41bcbda.png
+2022-09-24 18:59:02,385 INFO    Thread-109:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/17lzvq0m-media/images/test_input_label_58_5f0d565f7c97cfa3694a.png
+2022-09-24 18:59:02,428 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:02,428 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:02,428 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:02,429 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:02,435 INFO    Thread-110:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2l6kjfc9-media/images/test_output_image_59_a28bec38e3de37451bf6.png
+2022-09-24 18:59:02,554 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:02,554 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_69_8e37291c16dcd810b0fd.png with policy now
+2022-09-24 18:59:02,554 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:02,555 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:02,555 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:02,555 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:02,596 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:02,596 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_70_44b6d208951fbaca8d40.png with policy now
+2022-09-24 18:59:02,596 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:02,597 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:02,597 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:02,598 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:02,642 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:02,642 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_71_84650d380bd9f04f1d3a.png with policy now
+2022-09-24 18:59:02,642 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:02,643 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:02,643 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:02,644 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:02,656 INFO    Thread-111:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1xyre7hz-media/images/test_input_image_65_6a623f29d342c7fb872c.png
+2022-09-24 18:59:02,670 INFO    Thread-112:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2wg5ewil-media/images/test_input_label_66_dca6e90541eb64e9b610.png
+2022-09-24 18:59:02,736 INFO    Thread-113:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/ej6ayar7-media/images/test_output_image_67_4ec7707dc92f482554bf.png
+2022-09-24 18:59:02,770 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json
+2022-09-24 18:59:02,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_69_8e37291c16dcd810b0fd.png
+2022-09-24 18:59:02,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_65_6a623f29d342c7fb872c.png
+2022-09-24 18:59:02,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_71_84650d380bd9f04f1d3a.png
+2022-09-24 18:59:02,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_70_44b6d208951fbaca8d40.png
+2022-09-24 18:59:02,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_66_dca6e90541eb64e9b610.png
+2022-09-24 18:59:02,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_62_fd3b9f20e5ee19d5453c.png
+2022-09-24 18:59:02,772 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_63_878ad23a67e1a1c5daac.png
+2022-09-24 18:59:02,772 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_67_4ec7707dc92f482554bf.png
+2022-09-24 18:59:02,772 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_61_810c38e763e2fe302326.png
+2022-09-24 18:59:02,772 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images
+2022-09-24 18:59:02,802 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:02,802 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:02,802 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:02,803 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:02,939 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:02,939 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_73_77bcc4fdb98b0348ffe9.png with policy now
+2022-09-24 18:59:02,940 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:02,940 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:02,940 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:02,941 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:02,986 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:02,986 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:02,986 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_74_06311bdf6b30790c5960.png with policy now
+2022-09-24 18:59:02,987 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:02,987 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:02,987 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:03,025 INFO    Thread-115:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/12f024pn-media/images/test_input_label_70_44b6d208951fbaca8d40.png
+2022-09-24 18:59:03,031 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:03,031 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_75_4161d9e5b720fe455ded.png with policy now
+2022-09-24 18:59:03,031 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:03,032 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:03,032 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:03,032 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:03,037 INFO    Thread-114:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1il78jks-media/images/test_input_image_69_8e37291c16dcd810b0fd.png
+2022-09-24 18:59:03,115 INFO    Thread-116:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/38mzrrvt-media/images/test_output_image_71_84650d380bd9f04f1d3a.png
+2022-09-24 18:59:03,187 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:03,187 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:03,187 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:03,187 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:03,237 INFO    Thread-118:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3mrjeqhn-media/images/test_input_label_66_dca6e90541eb64e9b610.png
+2022-09-24 18:59:03,242 INFO    Thread-119:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/14miwh3u-media/images/test_input_label_62_fd3b9f20e5ee19d5453c.png
+2022-09-24 18:59:03,244 INFO    Thread-120:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/26fqvp8q-media/images/test_output_image_63_878ad23a67e1a1c5daac.png
+2022-09-24 18:59:03,262 INFO    Thread-121:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1hls9wn4-media/images/test_output_image_67_4ec7707dc92f482554bf.png
+2022-09-24 18:59:03,269 INFO    Thread-117:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/mhivb84c-media/images/test_input_image_65_6a623f29d342c7fb872c.png
+2022-09-24 18:59:03,323 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:03,323 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_77_fd85a3f0aad70e5f3dfd.png with policy now
+2022-09-24 18:59:03,324 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:03,324 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:03,324 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:03,325 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:03,340 INFO    Thread-122:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/x76to5gt-media/images/test_input_image_61_810c38e763e2fe302326.png
+2022-09-24 18:59:03,373 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:03,373 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:03,373 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_78_0e5810e485ae4b1468ef.png with policy now
+2022-09-24 18:59:03,374 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:03,374 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:03,377 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:03,410 INFO    Thread-123:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2uzs7dyq-media/images/test_input_image_73_77bcc4fdb98b0348ffe9.png
+2022-09-24 18:59:03,423 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:03,424 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:03,424 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_79_b91ffc26c70d5b5a00c2.png with policy now
+2022-09-24 18:59:03,424 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:03,424 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:03,425 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:03,429 INFO    Thread-124:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/wbhjwu35-media/images/test_input_label_74_06311bdf6b30790c5960.png
+2022-09-24 18:59:03,475 INFO    Thread-125:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2infhrom-media/images/test_output_image_75_4161d9e5b720fe455ded.png
+2022-09-24 18:59:03,576 INFO    Thread-126:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/38okygqk-media/images/test_input_label_70_44b6d208951fbaca8d40.png
+2022-09-24 18:59:03,609 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:03,609 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:03,609 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:03,610 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:03,706 INFO    Thread-128:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1a789l8y-media/images/test_output_image_71_84650d380bd9f04f1d3a.png
+2022-09-24 18:59:03,739 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:03,739 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:03,740 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_image_81_9eecafcbf43c06521f45.png with policy now
+2022-09-24 18:59:03,740 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:03,740 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:03,745 INFO    Thread-127:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2cncq33m-media/images/test_input_image_69_8e37291c16dcd810b0fd.png
+2022-09-24 18:59:03,746 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:03,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json
+2022-09-24 18:59:03,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/output.log
+2022-09-24 18:59:03,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_81_9eecafcbf43c06521f45.png
+2022-09-24 18:59:03,771 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_73_77bcc4fdb98b0348ffe9.png
+2022-09-24 18:59:03,772 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_79_b91ffc26c70d5b5a00c2.png
+2022-09-24 18:59:03,772 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_75_4161d9e5b720fe455ded.png
+2022-09-24 18:59:03,772 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_74_06311bdf6b30790c5960.png
+2022-09-24 18:59:03,772 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_77_fd85a3f0aad70e5f3dfd.png
+2022-09-24 18:59:03,772 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_78_0e5810e485ae4b1468ef.png
+2022-09-24 18:59:03,773 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images
+2022-09-24 18:59:03,787 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:03,787 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:03,788 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_input_label_82_16906fa71881c2b7730f.png with policy now
+2022-09-24 18:59:03,789 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:03,789 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:03,789 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:03,833 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: partial_history
+2022-09-24 18:59:03,833 DEBUG   SenderThread:63701 [sender.py:send():301] send: files
+2022-09-24 18:59:03,833 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file media/images/test_output_image_83_86026925420ae24fae5e.png with policy now
+2022-09-24 18:59:03,834 DEBUG   SenderThread:63701 [sender.py:send():301] send: history
+2022-09-24 18:59:03,834 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:03,835 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:03,846 INFO    Thread-130:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1ywvv0v3-media/images/test_input_label_78_0e5810e485ae4b1468ef.png
+2022-09-24 18:59:03,874 INFO    Thread-131:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/26bv08x5-media/images/test_output_image_79_b91ffc26c70d5b5a00c2.png
+2022-09-24 18:59:03,887 INFO    Thread-129:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/44rrns36-media/images/test_input_image_77_fd85a3f0aad70e5f3dfd.png
+2022-09-24 18:59:04,021 DEBUG   SenderThread:63701 [sender.py:send():301] send: telemetry
+2022-09-24 18:59:04,022 DEBUG   SenderThread:63701 [sender.py:send():301] send: exit
+2022-09-24 18:59:04,022 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 18:59:04,022 INFO    SenderThread:63701 [sender.py:send_exit():437] handling exit code: 0
+2022-09-24 18:59:04,022 INFO    SenderThread:63701 [sender.py:send_exit():439] handling runtime: 13
+2022-09-24 18:59:04,022 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:04,022 INFO    SenderThread:63701 [sender.py:send_exit():445] send defer
+2022-09-24 18:59:04,023 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 18:59:04,023 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 18:59:04,023 INFO    HandlerThread:63701 [handler.py:handle_request_defer():161] handle defer: 0
+2022-09-24 18:59:04,023 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: defer
+2022-09-24 18:59:04,023 INFO    SenderThread:63701 [sender.py:send_request_defer():454] handle sender defer: 0
+2022-09-24 18:59:04,024 INFO    SenderThread:63701 [sender.py:transition_state():458] send defer: 1
+2022-09-24 18:59:04,024 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 18:59:04,024 INFO    HandlerThread:63701 [handler.py:handle_request_defer():161] handle defer: 1
+2022-09-24 18:59:04,124 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: defer
+2022-09-24 18:59:04,124 INFO    SenderThread:63701 [sender.py:send_request_defer():454] handle sender defer: 1
+2022-09-24 18:59:04,124 INFO    SenderThread:63701 [sender.py:transition_state():458] send defer: 2
+2022-09-24 18:59:04,124 DEBUG   SenderThread:63701 [sender.py:send():301] send: stats
+2022-09-24 18:59:04,125 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 18:59:04,125 INFO    HandlerThread:63701 [handler.py:handle_request_defer():161] handle defer: 2
+2022-09-24 18:59:04,125 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: defer
+2022-09-24 18:59:04,125 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 18:59:04,125 INFO    SenderThread:63701 [sender.py:send_request_defer():454] handle sender defer: 2
+2022-09-24 18:59:04,125 INFO    SenderThread:63701 [sender.py:transition_state():458] send defer: 3
+2022-09-24 18:59:04,125 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 18:59:04,126 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 18:59:04,126 INFO    HandlerThread:63701 [handler.py:handle_request_defer():161] handle defer: 3
+2022-09-24 18:59:04,126 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: defer
+2022-09-24 18:59:04,126 INFO    SenderThread:63701 [sender.py:send_request_defer():454] handle sender defer: 3
+2022-09-24 18:59:04,126 INFO    SenderThread:63701 [sender.py:transition_state():458] send defer: 4
+2022-09-24 18:59:04,127 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 18:59:04,127 INFO    HandlerThread:63701 [handler.py:handle_request_defer():161] handle defer: 4
+2022-09-24 18:59:04,127 DEBUG   SenderThread:63701 [sender.py:send():301] send: summary
+2022-09-24 18:59:04,127 INFO    SenderThread:63701 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-24 18:59:04,127 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: defer
+2022-09-24 18:59:04,127 INFO    SenderThread:63701 [sender.py:send_request_defer():454] handle sender defer: 4
+2022-09-24 18:59:04,127 INFO    SenderThread:63701 [sender.py:transition_state():458] send defer: 5
+2022-09-24 18:59:04,128 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 18:59:04,128 INFO    HandlerThread:63701 [handler.py:handle_request_defer():161] handle defer: 5
+2022-09-24 18:59:04,128 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: defer
+2022-09-24 18:59:04,128 INFO    SenderThread:63701 [sender.py:send_request_defer():454] handle sender defer: 5
+2022-09-24 18:59:04,223 INFO    Thread-132:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2wozf0v7-media/images/test_input_image_81_9eecafcbf43c06521f45.png
+2022-09-24 18:59:04,227 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 18:59:04,244 INFO    Thread-136:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2dyqrgy7-media/images/test_input_label_82_16906fa71881c2b7730f.png
+2022-09-24 18:59:04,260 INFO    Thread-134:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/xdf5sebn-media/images/test_output_image_75_4161d9e5b720fe455ded.png
+2022-09-24 18:59:04,265 INFO    Thread-135:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/3rfjwbjm-media/images/test_input_label_74_06311bdf6b30790c5960.png
+2022-09-24 18:59:04,290 INFO    Thread-137:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2jbj8j4a-media/images/test_output_image_83_86026925420ae24fae5e.png
+2022-09-24 18:59:04,301 INFO    SenderThread:63701 [sender.py:transition_state():458] send defer: 6
+2022-09-24 18:59:04,301 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 18:59:04,302 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 18:59:04,302 INFO    HandlerThread:63701 [handler.py:handle_request_defer():161] handle defer: 6
+2022-09-24 18:59:04,302 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: defer
+2022-09-24 18:59:04,302 INFO    SenderThread:63701 [sender.py:send_request_defer():454] handle sender defer: 6
+2022-09-24 18:59:04,313 INFO    Thread-133:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2yiuzgia-media/images/test_input_image_73_77bcc4fdb98b0348ffe9.png
+2022-09-24 18:59:04,403 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 18:59:04,420 INFO    Thread-138:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1xrb5f7a-media/images/test_output_image_79_b91ffc26c70d5b5a00c2.png
+2022-09-24 18:59:04,431 INFO    Thread-139:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/1jefpemh-media/images/test_input_image_77_fd85a3f0aad70e5f3dfd.png
+2022-09-24 18:59:04,679 INFO    Thread-140:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2ny17za7-media/images/test_input_label_78_0e5810e485ae4b1468ef.png
+2022-09-24 18:59:04,749 INFO    Thread-141:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/19doi7aq-media/images/test_input_image_81_9eecafcbf43c06521f45.png
+2022-09-24 18:59:04,774 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json
+2022-09-24 18:59:04,775 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/config.yaml
+2022-09-24 18:59:04,776 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_82_16906fa71881c2b7730f.png
+2022-09-24 18:59:04,777 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_created():275] file/dir created: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_83_86026925420ae24fae5e.png
+2022-09-24 18:59:04,778 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images
+2022-09-24 18:59:05,109 INFO    SenderThread:63701 [sender.py:transition_state():458] send defer: 7
+2022-09-24 18:59:05,109 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 18:59:05,110 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 18:59:05,111 INFO    HandlerThread:63701 [handler.py:handle_request_defer():161] handle defer: 7
+2022-09-24 18:59:05,112 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: defer
+2022-09-24 18:59:05,112 INFO    SenderThread:63701 [sender.py:send_request_defer():454] handle sender defer: 7
+2022-09-24 18:59:05,112 INFO    SenderThread:63701 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-09-24 18:59:05,214 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 18:59:05,313 INFO    Thread-142:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/2besf0v7-media/images/test_input_label_82_16906fa71881c2b7730f.png
+2022-09-24 18:59:05,348 INFO    Thread-143:63701 [upload_job.py:push():139] Uploaded file /tmp/tmpt_zt3dy4wandb/o79e1ryi-media/images/test_output_image_83_86026925420ae24fae5e.png
+2022-09-24 18:59:05,777 INFO    Thread-13 :63701 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/output.log
+2022-09-24 18:59:05,780 INFO    SenderThread:63701 [dir_watcher.py:finish():392] scan: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files
+2022-09-24 18:59:05,781 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/requirements.txt requirements.txt
+2022-09-24 18:59:05,782 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/output.log output.log
+2022-09-24 18:59:05,792 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json wandb-summary.json
+2022-09-24 18:59:05,804 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-metadata.json wandb-metadata.json
+2022-09-24 18:59:05,806 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/config.yaml config.yaml
+2022-09-24 18:59:05,817 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/conda-environment.yaml conda-environment.yaml
+2022-09-24 18:59:05,835 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_54_b80898d07548148be05c.png media/images/test_input_label_54_b80898d07548148be05c.png
+2022-09-24 18:59:05,835 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_19_f6713fff2577725b20fc.png media/images/test_output_image_19_f6713fff2577725b20fc.png
+2022-09-24 18:59:05,836 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_41_630dff02754237563ab0.png media/images/test_input_image_41_630dff02754237563ab0.png
+2022-09-24 18:59:05,836 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_17_8bb6068b422063fc602e.png media/images/test_input_image_17_8bb6068b422063fc602e.png
+2022-09-24 18:59:05,836 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_73_77bcc4fdb98b0348ffe9.png media/images/test_input_image_73_77bcc4fdb98b0348ffe9.png
+2022-09-24 18:59:05,836 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_63_878ad23a67e1a1c5daac.png media/images/test_output_image_63_878ad23a67e1a1c5daac.png
+2022-09-24 18:59:05,836 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_70_44b6d208951fbaca8d40.png media/images/test_input_label_70_44b6d208951fbaca8d40.png
+2022-09-24 18:59:05,836 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_47_ba0fac5c8df0238799d3.png media/images/test_output_image_47_ba0fac5c8df0238799d3.png
+2022-09-24 18:59:05,836 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_10_ed824eae56939ef8bcf9.png media/images/test_input_label_10_ed824eae56939ef8bcf9.png
+2022-09-24 18:59:05,837 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_22_9503b4c94796767e3667.png media/images/test_input_label_22_9503b4c94796767e3667.png
+2022-09-24 18:59:05,837 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_82_16906fa71881c2b7730f.png media/images/test_input_label_82_16906fa71881c2b7730f.png
+2022-09-24 18:59:05,837 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_5_5507c06cf1fe7553f058.png media/images/test_input_image_5_5507c06cf1fe7553f058.png
+2022-09-24 18:59:05,837 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_7_8c590000019fc0e68515.png media/images/test_output_image_7_8c590000019fc0e68515.png
+2022-09-24 18:59:05,837 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_55_973f28ff026511a491c8.png media/images/test_output_image_55_973f28ff026511a491c8.png
+2022-09-24 18:59:05,838 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_13_da1ca28ba6093eb6b9bb.png media/images/test_input_image_13_da1ca28ba6093eb6b9bb.png
+2022-09-24 18:59:05,838 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_25_5bb6582cc696669bbaa7.png media/images/test_input_image_25_5bb6582cc696669bbaa7.png
+2022-09-24 18:59:05,838 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_39_dd60acb71af6bd950cb5.png media/images/test_output_image_39_dd60acb71af6bd950cb5.png
+2022-09-24 18:59:05,838 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_62_fd3b9f20e5ee19d5453c.png media/images/test_input_label_62_fd3b9f20e5ee19d5453c.png
+2022-09-24 18:59:05,838 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_59_a28bec38e3de37451bf6.png media/images/test_output_image_59_a28bec38e3de37451bf6.png
+2022-09-24 18:59:05,839 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_69_8e37291c16dcd810b0fd.png media/images/test_input_image_69_8e37291c16dcd810b0fd.png
+2022-09-24 18:59:05,839 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_46_799807ecdfbeff7cdf4b.png media/images/test_input_label_46_799807ecdfbeff7cdf4b.png
+2022-09-24 18:59:05,839 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_26_4a424faaefadcf65bf06.png media/images/test_input_label_26_4a424faaefadcf65bf06.png
+2022-09-24 18:59:05,839 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_81_9eecafcbf43c06521f45.png media/images/test_input_image_81_9eecafcbf43c06521f45.png
+2022-09-24 18:59:05,839 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_2_749ff44542282eaa33f0.png media/images/test_input_label_2_749ff44542282eaa33f0.png
+2022-09-24 18:59:05,839 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_29_97ea98db1911589b8bd4.png media/images/test_input_image_29_97ea98db1911589b8bd4.png
+2022-09-24 18:59:05,839 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_51_cbb16b704ed6f5293adc.png media/images/test_output_image_51_cbb16b704ed6f5293adc.png
+2022-09-24 18:59:05,840 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_21_0d7681f4173576098223.png media/images/test_input_image_21_0d7681f4173576098223.png
+2022-09-24 18:59:05,840 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_61_810c38e763e2fe302326.png media/images/test_input_image_61_810c38e763e2fe302326.png
+2022-09-24 18:59:05,840 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_74_06311bdf6b30790c5960.png media/images/test_input_label_74_06311bdf6b30790c5960.png
+2022-09-24 18:59:05,840 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_6_218f1661cd76bdc08273.png media/images/test_input_label_6_218f1661cd76bdc08273.png
+2022-09-24 18:59:05,840 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_30_98a7b6d0d23eb0050024.png media/images/test_input_label_30_98a7b6d0d23eb0050024.png
+2022-09-24 18:59:05,840 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_45_77d813e78dee8776e4a5.png media/images/test_input_image_45_77d813e78dee8776e4a5.png
+2022-09-24 18:59:05,840 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_11_84a4a2eebea3d8bf8d15.png media/images/test_output_image_11_84a4a2eebea3d8bf8d15.png
+2022-09-24 18:59:05,841 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_43_852a76999bb567f5f00a.png media/images/test_output_image_43_852a76999bb567f5f00a.png
+2022-09-24 18:59:05,841 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_14_88ecc81fd44d1a9db2e9.png media/images/test_input_label_14_88ecc81fd44d1a9db2e9.png
+2022-09-24 18:59:05,841 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_53_cc3bf3c49404efd89364.png media/images/test_input_image_53_cc3bf3c49404efd89364.png
+2022-09-24 18:59:05,841 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_31_8fdca95fb70c2c7035f5.png media/images/test_output_image_31_8fdca95fb70c2c7035f5.png
+2022-09-24 18:59:05,841 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_58_5f0d565f7c97cfa3694a.png media/images/test_input_label_58_5f0d565f7c97cfa3694a.png
+2022-09-24 18:59:05,841 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_49_598427563215c9816791.png media/images/test_input_image_49_598427563215c9816791.png
+2022-09-24 18:59:05,842 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_75_4161d9e5b720fe455ded.png media/images/test_output_image_75_4161d9e5b720fe455ded.png
+2022-09-24 18:59:05,842 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_1_767918c9f06f286c4818.png media/images/test_input_image_1_767918c9f06f286c4818.png
+2022-09-24 18:59:05,842 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_71_84650d380bd9f04f1d3a.png media/images/test_output_image_71_84650d380bd9f04f1d3a.png
+2022-09-24 18:59:05,842 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_9_5a3e2df44e28aff4c9b5.png media/images/test_input_image_9_5a3e2df44e28aff4c9b5.png
+2022-09-24 18:59:05,842 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_15_84573062199ed21f6ea0.png media/images/test_output_image_15_84573062199ed21f6ea0.png
+2022-09-24 18:59:05,842 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_57_f250687444acb41bcbda.png media/images/test_input_image_57_f250687444acb41bcbda.png
+2022-09-24 18:59:05,842 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_50_fbf33992dcfe59586340.png media/images/test_input_label_50_fbf33992dcfe59586340.png
+2022-09-24 18:59:05,843 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_83_86026925420ae24fae5e.png media/images/test_output_image_83_86026925420ae24fae5e.png
+2022-09-24 18:59:05,843 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_78_0e5810e485ae4b1468ef.png media/images/test_input_label_78_0e5810e485ae4b1468ef.png
+2022-09-24 18:59:05,843 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_18_3935b200ffe462e4bf90.png media/images/test_input_label_18_3935b200ffe462e4bf90.png
+2022-09-24 18:59:05,843 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_66_dca6e90541eb64e9b610.png media/images/test_input_label_66_dca6e90541eb64e9b610.png
+2022-09-24 18:59:05,843 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_23_3c953bfa52f6c48eb08d.png media/images/test_output_image_23_3c953bfa52f6c48eb08d.png
+2022-09-24 18:59:05,843 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_38_c36f46e011e8a559aaa7.png media/images/test_input_label_38_c36f46e011e8a559aaa7.png
+2022-09-24 18:59:05,843 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_42_8358402a7f08f88667b1.png media/images/test_input_label_42_8358402a7f08f88667b1.png
+2022-09-24 18:59:05,844 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_67_4ec7707dc92f482554bf.png media/images/test_output_image_67_4ec7707dc92f482554bf.png
+2022-09-24 18:59:05,844 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_33_8b96a59dd9ce95186f35.png media/images/test_input_image_33_8b96a59dd9ce95186f35.png
+2022-09-24 18:59:05,844 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_65_6a623f29d342c7fb872c.png media/images/test_input_image_65_6a623f29d342c7fb872c.png
+2022-09-24 18:59:05,844 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_label_34_ed473a4e132f9ff08386.png media/images/test_input_label_34_ed473a4e132f9ff08386.png
+2022-09-24 18:59:05,844 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_35_cab44482c40810848d72.png media/images/test_output_image_35_cab44482c40810848d72.png
+2022-09-24 18:59:05,844 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_79_b91ffc26c70d5b5a00c2.png media/images/test_output_image_79_b91ffc26c70d5b5a00c2.png
+2022-09-24 18:59:05,844 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_27_e2ad489c019177074464.png media/images/test_output_image_27_e2ad489c019177074464.png
+2022-09-24 18:59:05,845 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_output_image_3_903093166fa7907b8a76.png media/images/test_output_image_3_903093166fa7907b8a76.png
+2022-09-24 18:59:05,845 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_37_5ef873781ea98e2d6398.png media/images/test_input_image_37_5ef873781ea98e2d6398.png
+2022-09-24 18:59:05,845 INFO    SenderThread:63701 [dir_watcher.py:finish():406] scan save: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/media/images/test_input_image_77_fd85a3f0aad70e5f3dfd.png media/images/test_input_image_77_fd85a3f0aad70e5f3dfd.png
+2022-09-24 18:59:05,845 INFO    SenderThread:63701 [sender.py:transition_state():458] send defer: 8
+2022-09-24 18:59:05,845 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 18:59:05,846 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 18:59:05,846 INFO    HandlerThread:63701 [handler.py:handle_request_defer():161] handle defer: 8
+2022-09-24 18:59:05,847 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: defer
+2022-09-24 18:59:05,847 INFO    SenderThread:63701 [sender.py:send_request_defer():454] handle sender defer: 8
+2022-09-24 18:59:05,848 INFO    SenderThread:63701 [file_pusher.py:finish():168] shutting down file pusher
+2022-09-24 18:59:05,958 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 18:59:05,959 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 18:59:06,064 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 18:59:06,064 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 18:59:06,166 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 18:59:06,166 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 18:59:06,259 INFO    Thread-144:63701 [upload_job.py:push():139] Uploaded file /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/requirements.txt
+2022-09-24 18:59:06,265 INFO    Thread-145:63701 [upload_job.py:push():139] Uploaded file /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/output.log
+2022-09-24 18:59:06,278 INFO    Thread-148:63701 [upload_job.py:push():139] Uploaded file /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/conda-environment.yaml
+2022-09-24 18:59:06,279 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 18:59:06,280 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 18:59:06,289 INFO    Thread-146:63701 [upload_job.py:push():139] Uploaded file /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/wandb-summary.json
+2022-09-24 18:59:06,296 INFO    Thread-147:63701 [upload_job.py:push():139] Uploaded file /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/files/config.yaml
+2022-09-24 18:59:06,385 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 18:59:06,386 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 18:59:06,490 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 18:59:06,491 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 18:59:06,498 INFO    Thread-12 :63701 [sender.py:transition_state():458] send defer: 9
+2022-09-24 18:59:06,499 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 18:59:06,499 INFO    HandlerThread:63701 [handler.py:handle_request_defer():161] handle defer: 9
+2022-09-24 18:59:06,500 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: defer
+2022-09-24 18:59:06,500 INFO    SenderThread:63701 [sender.py:send_request_defer():454] handle sender defer: 9
+2022-09-24 18:59:06,580 INFO    SenderThread:63701 [sender.py:transition_state():458] send defer: 10
+2022-09-24 18:59:06,581 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 18:59:06,581 INFO    HandlerThread:63701 [handler.py:handle_request_defer():161] handle defer: 10
+2022-09-24 18:59:06,581 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: defer
+2022-09-24 18:59:06,582 INFO    SenderThread:63701 [sender.py:send_request_defer():454] handle sender defer: 10
+2022-09-24 18:59:06,582 INFO    SenderThread:63701 [sender.py:transition_state():458] send defer: 11
+2022-09-24 18:59:06,584 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: defer
+2022-09-24 18:59:06,585 DEBUG   SenderThread:63701 [sender.py:send():301] send: final
+2022-09-24 18:59:06,585 INFO    HandlerThread:63701 [handler.py:handle_request_defer():161] handle defer: 11
+2022-09-24 18:59:06,586 DEBUG   SenderThread:63701 [sender.py:send():301] send: footer
+2022-09-24 18:59:06,587 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: defer
+2022-09-24 18:59:06,587 INFO    SenderThread:63701 [sender.py:send_request_defer():454] handle sender defer: 11
+2022-09-24 18:59:06,596 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-24 18:59:06,597 DEBUG   SenderThread:63701 [sender.py:send_request():315] send_request: poll_exit
+2022-09-24 18:59:06,598 INFO    SenderThread:63701 [file_pusher.py:join():173] waiting for file pusher
+2022-09-24 18:59:06,982 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: sampled_history
+2022-09-24 18:59:06,988 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: get_summary
+2022-09-24 18:59:06,993 DEBUG   HandlerThread:63701 [handler.py:handle_request():138] handle_request: shutdown
+2022-09-24 18:59:06,994 INFO    HandlerThread:63701 [handler.py:finish():807] shutting down handler
+2022-09-24 18:59:07,585 INFO    WriterThread:63701 [datastore.py:close():279] close: /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_185850-qvor1buj/run-qvor1buj.wandb
+2022-09-24 18:59:07,878 INFO    SenderThread:63701 [sender.py:finish():1315] shutting down sender
+2022-09-24 18:59:07,879 INFO    SenderThread:63701 [file_pusher.py:finish():168] shutting down file pusher
+2022-09-24 18:59:07,879 INFO    SenderThread:63701 [file_pusher.py:join():173] waiting for file pusher
+2022-09-24 18:59:09,000 INFO    MainThread:63701 [internal.py:handle_exit():78] Internal process exited

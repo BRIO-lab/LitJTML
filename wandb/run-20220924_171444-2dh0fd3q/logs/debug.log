@@ -1,0 +1,174 @@
+2022-09-24 17:14:44,483 INFO    MainThread:51037 [wandb_setup.py:_flush():68] Configure stats pid to 51037
+2022-09-24 17:14:44,484 INFO    MainThread:51037 [wandb_setup.py:_flush():68] Loading settings from /home/sasank/.config/wandb/settings
+2022-09-24 17:14:44,484 INFO    MainThread:51037 [wandb_setup.py:_flush():68] Loading settings from /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/settings
+2022-09-24 17:14:44,484 INFO    MainThread:51037 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'run_group': 'HiPerGator'}
+2022-09-24 17:14:44,484 INFO    MainThread:51037 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'scripts/test.py', 'program': '/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/test.py'}
+2022-09-24 17:14:44,485 INFO    MainThread:51037 [wandb_init.py:_log_setup():476] Logging user logs to /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_171444-2dh0fd3q/logs/debug.log
+2022-09-24 17:14:44,485 INFO    MainThread:51037 [wandb_init.py:_log_setup():477] Logging internal logs to /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220924_171444-2dh0fd3q/logs/debug-internal.log
+2022-09-24 17:14:44,486 INFO    MainThread:51037 [wandb_init.py:init():516] calling init triggers
+2022-09-24 17:14:44,486 INFO    MainThread:51037 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-09-24 17:14:44,487 INFO    MainThread:51037 [wandb_init.py:init():569] starting backend
+2022-09-24 17:14:44,487 INFO    MainThread:51037 [wandb_init.py:init():573] setting up manager
+2022-09-24 17:14:44,495 INFO    MainThread:51037 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-09-24 17:14:44,506 INFO    MainThread:51037 [wandb_init.py:init():580] backend started and connected
+2022-09-24 17:14:44,514 INFO    MainThread:51037 [wandb_init.py:init():658] updated telemetry
+2022-09-24 17:14:44,531 INFO    MainThread:51037 [wandb_init.py:init():692] communicating run to backend with 30 second timeout
+2022-09-24 17:14:44,836 INFO    MainThread:51037 [wandb_run.py:_on_init():1974] communicating current version
+2022-09-24 17:14:44,978 INFO    MainThread:51037 [wandb_run.py:_on_init():1978] got version response 
+2022-09-24 17:14:44,979 INFO    MainThread:51037 [wandb_init.py:init():727] starting run threads in backend
+2022-09-24 17:14:47,180 INFO    MainThread:51037 [wandb_run.py:_console_start():1954] atexit reg
+2022-09-24 17:14:47,180 INFO    MainThread:51037 [wandb_run.py:_redirect():1812] redirect: SettingsConsole.WRAP_RAW
+2022-09-24 17:14:47,181 INFO    MainThread:51037 [wandb_run.py:_redirect():1877] Wrapping output streams.
+2022-09-24 17:14:47,181 INFO    MainThread:51037 [wandb_run.py:_redirect():1899] Redirects installed.
+2022-09-24 17:14:47,181 INFO    MainThread:51037 [wandb_init.py:init():764] run started, returning control to user process
+2022-09-24 17:14:50,105 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:50,516 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:50,920 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:51,326 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:51,720 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:52,137 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:52,548 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:52,928 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:53,333 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:53,726 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:54,116 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:54,491 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:54,853 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:55,230 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:55,615 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:56,005 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:56,414 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:56,785 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:57,183 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:57,567 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:57,940 INFO    MainThread:51037 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {"my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth": {'type': 'mask/class_labels', 'key': "my_image_key_wandb_delimeter_\n                'predictions': {\n                    'mask_data': test_outputs[0],\n                    'class_labels': class_labels\n                },\n                ground_truth", 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-24 17:14:58,041 INFO    MainThread:51037 [wandb_run.py:_finish():1720] finishing run sasank-desaraju/LitJTML Development!/2dh0fd3q
+2022-09-24 17:14:58,041 INFO    MainThread:51037 [wandb_run.py:_atexit_cleanup():1923] got exitcode: 0
+2022-09-24 17:14:58,041 INFO    MainThread:51037 [wandb_run.py:_restore():1906] restore
+2022-09-24 17:14:58,041 INFO    MainThread:51037 [wandb_run.py:_restore():1912] restore done
+2022-09-24 17:14:58,053 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 6286895
+  total_bytes: 7219374
+}
+
+2022-09-24 17:14:58,175 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 6806198
+  total_bytes: 7219374
+}
+
+2022-09-24 17:14:58,402 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 6998570
+  total_bytes: 7219374
+}
+
+2022-09-24 17:15:01,011 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 7219374
+  total_bytes: 7219374
+}
+
+2022-09-24 17:15:01,911 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 7219374
+  total_bytes: 7261381
+}
+
+2022-09-24 17:15:02,013 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 7219374
+  total_bytes: 7261381
+}
+
+2022-09-24 17:15:02,114 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 7261381
+  total_bytes: 7261381
+}
+
+2022-09-24 17:15:02,217 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 7261381
+  total_bytes: 7261381
+}
+
+2022-09-24 17:15:02,337 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 7261381
+  total_bytes: 7261381
+}
+
+2022-09-24 17:15:02,443 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 7261381
+  total_bytes: 7261381
+}
+
+2022-09-24 17:15:02,548 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 7261381
+  total_bytes: 7261381
+}
+
+2022-09-24 17:15:02,678 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 7261381
+  total_bytes: 7261381
+}
+
+2022-09-24 17:15:03,020 INFO    MainThread:51037 [wandb_run.py:_on_finish():2224] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+  media_count: 105
+}
+pusher_stats {
+  uploaded_bytes: 7261381
+  total_bytes: 7261381
+}
+local_info {
+}
+
+2022-09-24 17:15:04,138 INFO    MainThread:51037 [wandb_run.py:_footer_history_summary_info():3321] rendering history
+2022-09-24 17:15:04,138 INFO    MainThread:51037 [wandb_run.py:_footer_history_summary_info():3353] rendering summary
+2022-09-24 17:15:04,144 INFO    MainThread:51037 [wandb_run.py:_footer_sync_info():3277] logging synced files

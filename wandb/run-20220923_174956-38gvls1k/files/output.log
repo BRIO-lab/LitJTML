@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/fit.py", line 77, in <module>
+    main(config)
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/fit.py", line 33, in main
+    model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run) # I can put some data module stuff in this argument if I want
+NameError: name 'wandb_run' is not defined

@@ -1,0 +1,17 @@
+MyModel
+********************  Starting Initialization!  ********************
+Auto select gpus: [0]
+Traceback (most recent call last):
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/fit.py", line 85, in <module>
+    main(config, wandb_run)
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/fit.py", line 42, in main
+    trainer = pl.Trainer(accelerator='gpu',
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/utilities/argparse.py", line 345, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 497, in __init__
+    self._call_callback_hooks("on_init_start")
+  File "/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1585, in _call_callback_hooks
+    fn(self, *args, **kwargs)
+  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/callbacks.py", line 28, in on_init_start
+    self.wandb_logger.info(f"*********************** alshdfahsdfhasfdhl *****************")
+AttributeError: 'JTMLCallback' object has no attribute 'wandb_logger'

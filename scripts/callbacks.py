@@ -6,23 +6,32 @@ This is to handle callbacks to keep our code clean and nice."""
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import Callback
 from pytorch_lightning.callbacks import ModelCheckpoint
+import wandb
+import math
+from lit_utility import run_metrics
 
 class JTMLCallback(Callback):
     def __init__(self, config, wandb_run) -> None:
+    #def __init__(self, config, wandb_logger) -> None:
     #def __init__(self) -> None:
         super().__init__()
 
         self.config = config
         self.wandb_run = wandb_run
-        print(self.config.init['MODEL_NAME'])
+        #self.wandb_logger = wandb_logger
+        self.min_val_loss = math.inf
+        self.class_labels = self.config.dataset['CLASS_LABELS']
 
     """
     *********************** Init ***********************
     """
 
+    # This hook will be deprecated in v1.8 ! What do?
     def on_init_start(self, trainer: "pl.Trainer") -> None:
         print(20 * '*' + "  Starting Initialization!  " + 20 * '*')
+        #self.wandb_logger.info(f"*********************** alshdfahsdfhasfdhl *****************")
 
+    # This hook will be deprecated in v1.8 ! What do?
     def on_init_end(self, trainer: "pl.Trainer") -> None:
         print(20 * '*' + "  Finished Initialization!  " + 20 * '*')
         return super().on_init_end(trainer)
@@ -75,6 +84,8 @@ class JTMLCallback(Callback):
 
     def on_validation_end(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
         print(20 * '*' + "  Finished Validation!  " + 20 * '*')
+        # TODO: is the below line right? Should it be in this hook or in on_validation_epoch_end()?
+        print(15 * '*' + 'Min Validation Loss is ' + str(self.min_val_loss))
         return super().on_validation_end(trainer, pl_module)
 
     def on_validation_epoch_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
@@ -87,10 +98,55 @@ class JTMLCallback(Callback):
     """
     def on_validation_batch_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule", batch: Any, batch_idx: int, dataloader_idx: int) -> None:
         return super().on_validation_batch_start(trainer, pl_module, batch, batch_idx, dataloader_idx)
-
-    def on_validation_batch_end(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule", outputs: Optional[STEP_OUTPUT], batch: Any, batch_idx: int, dataloader_idx: int) -> None:
-        return super().on_validation_batch_end(trainer, pl_module, outputs, batch, batch_idx, dataloader_idx)
     """
+    
+    def on_validation_batch_end(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule", outputs, batch, batch_idx: int, dataloader_idx: int) -> None:
+        # TODO: Is outputs always just 1 loss value? If not, this might break bc it assumes outputs is comparable to min_val_loss
+        if outputs < self.min_val_loss:
+            self.min_val_loss = outputs
+        
+        self.wandb_run.log({'validation/loss': outputs})
+
+        val_outputs = pl_module.forward(batch['image'])
+
+        for idx in range(self.config.datamodule['BATCH_SIZE']):
+            
+            # Getting the batch's data
+            img_name = batch['img_name'][idx]
+            input_image = batch['image'][idx][0]
+            label_image = batch['label'][idx][0]
+            output_image = val_outputs[idx][0]
+            
+            # Inputs
+            wandb_input = wandb.Image(input_image, caption=img_name)
+            # TODO: Should I make this 'validation/epoch_idx_' + epoch_idx + '/input_image' ?
+            self.wandb_run.log({'validation/input_image': wandb_input})
+            
+            # Labels
+            wandb_label = wandb.Image(label_image, caption=img_name)
+            self.wandb_run.log({'validation/input_label': wandb_label})
+            
+            # Predictions
+            wandb_output = wandb.Image(output_image, caption=img_name)
+            self.wandb_run.log({'validation/output_image': wandb_output})
+            
+            # Overlay Image
+            self.wandb_run.log(
+                {'validation/overlay': wandb.Image(input_image,
+                caption=img_name,
+                masks={
+                    'predictions': {
+                        'mask_data': output_image.detach().cpu().numpy(),
+                        'class_labels': self.class_labels
+                    },
+                    'ground_truth': {
+                        # the mask_data here is actually on CPU since it needs to be numpy which is only on CPU
+                        'mask_data': label_image.detach().cpu().numpy(),
+                        'class_labels': self.class_labels
+                    }
+                })}
+            )
+        return super().on_validation_batch_end(trainer, pl_module, outputs, batch, batch_idx, dataloader_idx)
 
     """
     *********************** Test ***********************
@@ -110,14 +166,62 @@ class JTMLCallback(Callback):
     def on_test_epoch_end(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
         return super().on_test_epoch_end(trainer, pl_module)
 
+    #def on_test_batch_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule", batch: Any, batch_idx: int, dataloader_idx: int) -> None:
+        #return super().on_test_batch_start(trainer, pl_module, batch, batch_idx, dataloader_idx)
     """
-    def on_test_batch_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule", batch: Any, batch_idx: int, dataloader_idx: int) -> None:
-        return super().on_test_batch_start(trainer, pl_module, batch, batch_idx, dataloader_idx)
+    def on_test_batch_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule", batch, batch_idx: int) -> None:
+        return super().on_test_batch_start(trainer, pl_module, batch, batch_idx)
+    """
 
-    def on_test_batch_end(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule", outputs: Optional[STEP_OUTPUT], batch: Any, batch_idx: int, dataloader_idx: int) -> None:
+    def on_test_batch_end(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule", outputs, batch, batch_idx: int, dataloader_idx) -> None:
+        self.wandb_run.log({'test/loss': outputs})
+
+        test_outputs = pl_module.forward(batch['image'])
+
+        for idx in range(self.config.datamodule['BATCH_SIZE']):
+            
+            # Getting the batch's data
+            img_name = batch['img_name'][idx]
+            input_image = batch['image'][idx][0]
+            label_image = batch['label'][idx][0]
+            output_image = test_outputs[idx][0]
+            
+            # Inputs
+            wandb_input = wandb.Image(input_image, caption=img_name)
+            self.wandb_run.log({'test/input_image': wandb_input})
+            
+            # Labels
+            wandb_label = wandb.Image(label_image, caption=img_name)
+            self.wandb_run.log({'test/input_label': wandb_label})
+            
+            # Predictions
+            wandb_output = wandb.Image(output_image, caption=img_name)
+            self.wandb_run.log({'test/output_image': wandb_output})
+            
+            # Overlay Image
+            self.wandb_run.log(
+                {'test/overlay': wandb.Image(input_image,
+                caption=img_name,
+                masks={
+                    'predictions': {
+                        'mask_data': output_image.detach().cpu().numpy(),
+                        'class_labels': self.class_labels
+                    },
+                    'ground_truth': {
+                        # the mask_data here is actually on CPU since it needs to be numpy which is only on CPU
+                        'mask_data': label_image.detach().cpu().numpy(),
+                        'class_labels': self.class_labels
+                    }
+                })}
+            )
+
+        # Logging metrics
+        metric_dict = run_metrics(output_image, label_image, self.config.dataset['IMAGE_THRESHOLD'])
+        self.wandb_run.log(metric_dict)
+
         return super().on_test_batch_end(trainer, pl_module, outputs, batch, batch_idx, dataloader_idx)
-    """
 
+        
 
 
 

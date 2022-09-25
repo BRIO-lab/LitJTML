@@ -1,0 +1,38 @@
+
+MyModel
+Auto select gpus: [0]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py:247: LightningDeprecationWarning: The `on_init_start` callback hook was deprecated in v1.6 and will be removed in v1.8.
+  rank_zero_deprecation(
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py:251: LightningDeprecationWarning: The `on_init_end` callback hook was deprecated in v1.6 and will be removed in v1.8.
+  rank_zero_deprecation("The `on_init_end` callback hook was deprecated in v1.6 and will be removed in v1.8.")
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:616: UserWarning: Checkpoint directory /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/checkpoints exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name       | Type                  | Params
+-----------------------------------------------------
+0 | pose_hrnet | PoseHighResolutionNet | 9.3 M
+1 | loss_fn    | BCEWithLogitsLoss     | 0
+-----------------------------------------------------
+9.3 M     Trainable params
+0         Non-trainable params
+9.3 M     Total params
+37.200    Total estimated model params size (MB)
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+********************  Starting Initialization!  ********************
+********************  Finished Initialization!  ********************
+********************  Starting Fitting!  ********************
+Sanity Checking: 0it [00:00, ?it/s]********************  Starting Validation!  ********************
+Sanity Checking DataLoader 0: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00,  3.50it/s]********************  Finished Validation!  ********************
+********************  Starting Training!  ********************
+Epoch 0:   0%|                                                                                                                                              | 1/2058 [00:00<19:10,  1.79it/s, loss=0.634, v_num=32]
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:381: UserWarning: `ModelCheckpoint(monitor='validation/loss')` could not find the monitored key in the returned metrics: ['epoch', 'step']. HINT: Did you call `log('validation/loss', value)` in the `LightningModule`?
+  warning_cache.warn(m)
+`Trainer.fit` stopped: `max_steps=4` reached.
+Epoch 0:   0%|▎                                                                                                                                              | 4/2058 [00:01<12:35,  2.72it/s, loss=0.51, v_num=32]********************  Finished Training!  ********************
+Epoch 0:   0%|▎                                                                                                                                              | 4/2058 [00:01<12:35,  2.72it/s, loss=0.51, v_num=32]
+********************  Finished Fitting!  ********************

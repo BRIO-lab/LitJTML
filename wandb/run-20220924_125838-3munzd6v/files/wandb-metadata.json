@@ -1,0 +1,26 @@
+{
+    "os": "Linux-5.15.0-48-generic-x86_64-with-glibc2.35",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-09-24T16:58:39.364463",
+    "startedAt": "2022-09-24T16:58:38.854946",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1060 6GB",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "config"
+    ],
+    "state": "running",
+    "program": "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/test.py",
+    "codePath": "scripts/test.py",
+    "git": {
+        "remote": "git@github.com:BRIO-lab/LitJTML.git",
+        "commit": "88af6db59f072afef2348121cef8a009d84b86df"
+    },
+    "email": "sasank.desaraju@ufl.edu",
+    "root": "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML",
+    "host": "Sasank-Ubuntu-Desktop",
+    "username": "sasank",
+    "executable": "/home/sasank/miniconda3/envs/sasank-jtml-env/bin/python"
+}
