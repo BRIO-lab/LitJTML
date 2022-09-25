@@ -24,9 +24,16 @@ class MyLightningDataModule(pl.LightningDataModule):
         self.test_data = config.temp['test_data']
         self.img_dir = config.datamodule['IMAGE_DIRECTORY']
 
-        self.num_workers = config.datamodule['NUM_WORKERS']
-
+        # Data loader parameters
         self.batch_size = config.datamodule['BATCH_SIZE']
+        self.num_workers = config.datamodule['NUM_WORKERS']
+        self.pin_memory = config.datamodule['PIN_MEMORY']
+        self.shuffle = config.datamodule['SHUFFLE']
+        self.data_loader_parameters = { 'batch_size': self.batch_size,
+                                        'num_workers': self.num_workers,
+                                        'pin_memory': self.pin_memory,
+                                        'shuffle': self.shuffle}
+
         #self.log(batch_size=self.batch_size)
         # other constants
 
@@ -66,16 +73,10 @@ class MyLightningDataModule(pl.LightningDataModule):
         return
 
     def train_dataloader(self):
-        return torch.utils.data.DataLoader(self.training_set,
-        batch_size=self.batch_size,
-        num_workers=self.num_workers)
+        return torch.utils.data.DataLoader(self.training_set, **self.data_loader_parameters)
 
     def val_dataloader(self):
-        return torch.utils.data.DataLoader(self.validation_set,
-        batch_size=self.batch_size,
-        num_workers=self.num_workers)
+        return torch.utils.data.DataLoader(self.validation_set, **self.data_loader_parameters)
 
     def test_dataloader(self):
-        return torch.utils.data.DataLoader(self.test_set,
-        batch_size=self.batch_size,
-        num_workers=self.num_workers)
+        return torch.utils.data.DataLoader(self.test_set, **self.data_loader_parameters)

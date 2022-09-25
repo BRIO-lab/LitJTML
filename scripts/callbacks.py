@@ -113,7 +113,8 @@ class JTMLCallback(Callback):
 
         val_outputs = pl_module.forward(batch['image'])
 
-        for idx in range(self.config.datamodule['BATCH_SIZE']):
+        #for idx in range(self.config.datamodule['BATCH_SIZE']):
+        for idx in range(len(batch['img_name'])):
             
             # Getting the batch's data
             img_name = batch['img_name'][idx]
@@ -185,7 +186,8 @@ class JTMLCallback(Callback):
 
         test_outputs = pl_module.forward(batch['image'])
 
-        for idx in range(self.config.datamodule['BATCH_SIZE']):
+        #for idx in range(self.config.datamodule['BATCH_SIZE']):
+        for idx in range(len(batch['img_name'])):
             
             # Getting the batch's data
             img_name = batch['img_name'][idx]
