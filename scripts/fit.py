@@ -52,7 +52,8 @@ def main(config, wandb_run):
     trainer.fit(model, data_module)
     trainer.save_checkpoint(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt')
     #wandb_run.save(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt')
-    wandb.save(CKPT_DIR + config.init['MODEL_NAME'] + time.strftime('%Y-%m-%d-%H-%M-%S') + '.ckpt')
+    #wandb.save(CKPT_DIR + config.init['MODEL_NAME'] + time.strftime('%Y-%m-%d-%H-%M-%S') + '.ckpt')
+    wandb.save(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt')
 
 if __name__ == '__main__':
     #"""
