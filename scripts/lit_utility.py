@@ -1,3 +1,8 @@
+"""
+Changed by Sasank Desaraju
+9/24/22
+"""
+
 import logging
 from pathlib import Path
 import pandas as pd
@@ -8,6 +13,11 @@ import torchvision
 import os
 from collections import OrderedDict
 
+"""
+LitJTML (the Lightning stuff really only makes use of the metric stuff at the bottom.
+Everything else (parse_config, set_logger, etc) was just copied over but it not being used
+in our Lightning workflow.
+"""
 
 # not used because config was changed to .py module
 def parse_config(config_file):
