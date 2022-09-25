@@ -23,12 +23,20 @@ import wandb
 #torch.manual_seed(42) # haha HG2G
 
 
+"""
+The main function contains the neural network-related code.
+"""
 
 def main(config, wandb_run):
+    # The DataModule object loads the data from CSVs, calls the JTMLDataset to get data, and creates the dataloaders.
     data_module = MyLightningDataModule(
         config=config)
+    # This is the real architecture we're using. It is vanilla PyTorch - no Lightning.
     pose_hrnet = PoseHighResolutionNet(num_key_points=1, num_image_channels=config.module['NUM_IMAGE_CHANNELS'])
     #model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run).load_from_checkpoint(CKPT_DIR + config.init['RUN_NAME'] + '.ckpt')
+    # This is our LightningModule, which where the architecture is supposed to go.
+    # Since we are using an architecure written in PyTorch (PoseHRNet), we feed that architecture in.
+    # We also pass our wandb_run object to we can log.
     model = MyLightningModule.load_from_checkpoint(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt', pose_hrnet=pose_hrnet, wandb_run=wandb_run)
     if config.datamodule['LOAD_CKPT_FILE'] != None:
         model = MyLightningModule.load_from_checkpoint(config.datamodule['LOAD_CKPT_FILE'], pose_hrnet=pose_hrnet, wandb_run=wandb_run)
@@ -42,40 +50,47 @@ def main(config, wandb_run):
                                                         filename=wandb_run.name)
     """
 
+    # Our trainer object contains a lot of important info.
     trainer = pl.Trainer(accelerator='gpu',
-        devices=-1,
-        auto_select_gpus=True,
+        devices=-1,     # use all available devices (GPUs)
+        auto_select_gpus=True,  # helps use all GPUs, not quite understood...
         #logger=wandb_logger,
         default_root_dir=os.getcwd(),
-        callbacks=[JTMLCallback(config, wandb_run)],
+        callbacks=[JTMLCallback(config, wandb_run)],    # pass in the callbacks we want
         #callbacks=[save_best_val_checkpoint_callback],
         fast_dev_run=config.init['FAST_DEV_RUN'],
         max_epochs=config.init['MAX_EPOCHS'],
         max_steps=config.init['MAX_STEPS'],
         strategy=config.init['STRATEGY'])
+    # This is the step where everything happens.
     trainer.test(model, data_module)
 
 if __name__ == '__main__':
-    #"""
-    # parsing the config
+    ## Setting up the config
+    # Parsing the config
     CONFIG_DIR = os.getcwd() + '/config/'
     sys.path.append(CONFIG_DIR)
     config_module = import_module(sys.argv[1])
     #config_module = import_module('config/config')
+    # Instantiating the config file
     config = config_module.Configuration()
-    #"""
 
+    # Setting the checkpoint directory
     CKPT_DIR = os.getcwd() + '/checkpoints/'
 
-    # setting up the logger
+    ## Setting up the logger
+    # Setting the run group as an environment variable. Mostly for DDP (on HPG)
     os.environ['WANDB_RUN_GROUP'] = config.init['WANDB_RUN_GROUP']
+
+    # Creating the Wandb run object
     wandb_run = wandb.init(
-        project=config.init['PROJECT_NAME'],
-        name=config.init['RUN_NAME'],
+        project=config.init['PROJECT_NAME'],    # Leave the same for the project (e.g. JTML_seg)
+        name=config.init['RUN_NAME'],           # Should be diff every time to avoid confusion (e.g. current time)
         group=config.init['WANDB_RUN_GROUP'],
-        job_type='test'
+        job_type='test'                          # Lets us know in Wandb that this was a test run
     )
 
     main(config,wandb_run)
 
+    # Sync and close the Wandb logging. Good to have for DDP, I believe.
     wandb_run.finish()

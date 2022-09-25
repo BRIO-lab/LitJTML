@@ -1,0 +1,177 @@
+2022-09-25 16:32:52,829 INFO    MainThread:39966 [wandb_setup.py:_flush():68] Configure stats pid to 39966
+2022-09-25 16:32:52,830 INFO    MainThread:39966 [wandb_setup.py:_flush():68] Loading settings from /home/sasank/.config/wandb/settings
+2022-09-25 16:32:52,830 INFO    MainThread:39966 [wandb_setup.py:_flush():68] Loading settings from /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/settings
+2022-09-25 16:32:52,830 INFO    MainThread:39966 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'run_group': 'Local'}
+2022-09-25 16:32:52,831 INFO    MainThread:39966 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'scripts/test.py', 'program': '/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/test.py'}
+2022-09-25 16:32:52,831 INFO    MainThread:39966 [wandb_init.py:_log_setup():476] Logging user logs to /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220925_163252-3cezfop2/logs/debug.log
+2022-09-25 16:32:52,831 INFO    MainThread:39966 [wandb_init.py:_log_setup():477] Logging internal logs to /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/wandb/run-20220925_163252-3cezfop2/logs/debug-internal.log
+2022-09-25 16:32:52,832 INFO    MainThread:39966 [wandb_init.py:init():516] calling init triggers
+2022-09-25 16:32:52,833 INFO    MainThread:39966 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-09-25 16:32:52,834 INFO    MainThread:39966 [wandb_init.py:init():569] starting backend
+2022-09-25 16:32:52,834 INFO    MainThread:39966 [wandb_init.py:init():573] setting up manager
+2022-09-25 16:32:52,845 INFO    MainThread:39966 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-09-25 16:32:52,851 INFO    MainThread:39966 [wandb_init.py:init():580] backend started and connected
+2022-09-25 16:32:52,858 INFO    MainThread:39966 [wandb_init.py:init():658] updated telemetry
+2022-09-25 16:32:52,879 INFO    MainThread:39966 [wandb_init.py:init():692] communicating run to backend with 30 second timeout
+2022-09-25 16:32:53,184 INFO    MainThread:39966 [wandb_run.py:_on_init():1974] communicating current version
+2022-09-25 16:32:53,298 INFO    MainThread:39966 [wandb_run.py:_on_init():1978] got version response 
+2022-09-25 16:32:53,298 INFO    MainThread:39966 [wandb_init.py:init():727] starting run threads in backend
+2022-09-25 16:32:55,731 INFO    MainThread:39966 [wandb_run.py:_console_start():1954] atexit reg
+2022-09-25 16:32:55,732 INFO    MainThread:39966 [wandb_run.py:_redirect():1812] redirect: SettingsConsole.WRAP_RAW
+2022-09-25 16:32:55,732 INFO    MainThread:39966 [wandb_run.py:_redirect():1877] Wrapping output streams.
+2022-09-25 16:32:55,732 INFO    MainThread:39966 [wandb_run.py:_redirect():1899] Redirects installed.
+2022-09-25 16:32:55,733 INFO    MainThread:39966 [wandb_init.py:init():764] run started, returning control to user process
+2022-09-25 16:32:58,693 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:32:58,693 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:32:59,134 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:32:59,135 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:32:59,674 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:32:59,674 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:00,124 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:00,124 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:00,577 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:00,577 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:01,061 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:01,062 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:01,551 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:01,552 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:01,990 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:01,990 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:02,418 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:02,419 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:02,885 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:02,886 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:03,340 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:03,341 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:03,794 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:03,794 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:04,219 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:04,220 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:04,684 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:04,685 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:05,141 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:05,141 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:05,598 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:05,598 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:06,080 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:06,081 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:06,527 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:06,527 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:06,969 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:06,970 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:07,453 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:07,454 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:07,902 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:07,902 INFO    MainThread:39966 [wandb_run.py:_config_callback():1145] config_cb None None {'_wandb': {'mask/class_labels': {'test/overlay_wandb_delimeter_predictions': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_predictions', 'value': {0: 'bone', 1: 'background'}}, 'test/overlay_wandb_delimeter_ground_truth': {'type': 'mask/class_labels', 'key': 'test/overlay_wandb_delimeter_ground_truth', 'value': {0: 'bone', 1: 'background'}}}}}
+2022-09-25 16:33:08,004 INFO    MainThread:39966 [wandb_run.py:_finish():1720] finishing run sasank-desaraju/LitJTML Development!/3cezfop2
+2022-09-25 16:33:08,004 INFO    MainThread:39966 [wandb_run.py:_atexit_cleanup():1923] got exitcode: 0
+2022-09-25 16:33:08,004 INFO    MainThread:39966 [wandb_run.py:_restore():1906] restore
+2022-09-25 16:33:08,004 INFO    MainThread:39966 [wandb_run.py:_restore():1912] restore done
+2022-09-25 16:33:08,007 INFO    MainThread:39966 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 126
+}
+pusher_stats {
+  uploaded_bytes: 9688952
+  total_bytes: 9883820
+}
+
+2022-09-25 16:33:08,240 INFO    MainThread:39966 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 126
+}
+pusher_stats {
+  uploaded_bytes: 9883820
+  total_bytes: 9883820
+}
+
+2022-09-25 16:33:09,646 INFO    MainThread:39966 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 126
+}
+pusher_stats {
+  uploaded_bytes: 9879628
+  total_bytes: 9883820
+}
+
+2022-09-25 16:33:10,285 INFO    MainThread:39966 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 126
+}
+pusher_stats {
+  uploaded_bytes: 9883820
+  total_bytes: 9900234
+}
+
+2022-09-25 16:33:10,388 INFO    MainThread:39966 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 126
+}
+pusher_stats {
+  uploaded_bytes: 9883820
+  total_bytes: 9900234
+}
+
+2022-09-25 16:33:10,490 INFO    MainThread:39966 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 126
+}
+pusher_stats {
+  uploaded_bytes: 9900234
+  total_bytes: 9900234
+}
+
+2022-09-25 16:33:10,595 INFO    MainThread:39966 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 126
+}
+pusher_stats {
+  uploaded_bytes: 9900234
+  total_bytes: 9900234
+}
+
+2022-09-25 16:33:10,713 INFO    MainThread:39966 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 126
+}
+pusher_stats {
+  uploaded_bytes: 9900234
+  total_bytes: 9900234
+}
+
+2022-09-25 16:33:10,818 INFO    MainThread:39966 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 126
+}
+pusher_stats {
+  uploaded_bytes: 9900234
+  total_bytes: 9900234
+}
+
+2022-09-25 16:33:11,001 INFO    MainThread:39966 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 126
+}
+pusher_stats {
+  uploaded_bytes: 9900234
+  total_bytes: 9900234
+}
+
+2022-09-25 16:33:11,326 INFO    MainThread:39966 [wandb_run.py:_on_finish():2224] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+  media_count: 126
+}
+pusher_stats {
+  uploaded_bytes: 9900234
+  total_bytes: 9900234
+}
+local_info {
+}
+
+2022-09-25 16:33:12,445 INFO    MainThread:39966 [wandb_run.py:_footer_history_summary_info():3321] rendering history
+2022-09-25 16:33:12,445 INFO    MainThread:39966 [wandb_run.py:_footer_history_summary_info():3353] rendering summary
+2022-09-25 16:33:12,448 INFO    MainThread:39966 [wandb_run.py:_footer_sync_info():3277] logging synced files

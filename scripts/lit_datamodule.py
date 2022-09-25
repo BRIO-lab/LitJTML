@@ -18,6 +18,7 @@ class MyLightningDataModule(pl.LightningDataModule):
     config):
         super().__init__()
 
+        # TODO: Get rid of the temp stuff. Use the data directory and the given data name
         self.train_data = config.temp['train_data']
         self.val_data = config.temp['val_data']
         self.test_data = config.temp['test_data']

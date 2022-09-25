@@ -54,16 +54,20 @@ class JTMLCallback(Callback):
 
     def on_train_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
         print(20 * '*' + "  Starting Training!  " + 20 * '*')
+        self.wandb_run.log({'INFO': 'Starting Training!'})
         return super().on_train_start(trainer, pl_module)
 
     def on_train_end(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
         print(20 * '*' + "  Finished Training!  " + 20 * '*')
+        self.wandb_run.log({'INFO': 'Finished Training!'})
         return super().on_train_end(trainer, pl_module)
 
     def on_train_epoch_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
+        print(20 * '*' + f'Starting train epoch {pl_module.current_epoch}!' + 20 * '*')
         return super().on_epoch_start(trainer, pl_module)
 
     def on_train_epoch_end(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
+        print(20 * '*' + f'Finished train epoch {pl_module.current_epoch}!' + 20 * '*')
         return super().on_epoch_end(trainer, pl_module)
 
     """
@@ -154,16 +158,19 @@ class JTMLCallback(Callback):
 
     def on_test_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
         print(20 * '*' + "  Starting Testing!  " + 20 * '*')
+        self.wandb_run.log({'INFO': 'Starting Testing!'})
         return super().on_test_start(trainer, pl_module)
 
     def on_test_end(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
         print(20 * '*' + "  Finished Testing!  " + 20 * '*')
+        self.wandb_run.log({'INFO': 'Finished Testing!'})
         return super().on_test_end(trainer, pl_module)
 
     def on_test_epoch_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
         return super().on_test_epoch_start(trainer, pl_module)
 
     def on_test_epoch_end(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
+        print(20 * '*' + f'Finished test epoch {pl_module.current_epoch}!' + 20 * '*')
         return super().on_test_epoch_end(trainer, pl_module)
 
     #def on_test_batch_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule", batch: Any, batch_idx: int, dataloader_idx: int) -> None:
