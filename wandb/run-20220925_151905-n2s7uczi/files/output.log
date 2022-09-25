@@ -1,0 +1,122 @@
+Auto select gpus: [0]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py:247: LightningDeprecationWarning: The `on_init_start` callback hook was deprecated in v1.6 and will be removed in v1.8.
+  rank_zero_deprecation(
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py:251: LightningDeprecationWarning: The `on_init_end` callback hook was deprecated in v1.6 and will be removed in v1.8.
+  rank_zero_deprecation("The `on_init_end` callback hook was deprecated in v1.6 and will be removed in v1.8.")
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+********************  Starting Initialization!  ********************
+********************  Finished Initialization!  ********************
+********************  Starting Testing!  ********************
+Testing DataLoader 0:   0%|                                                                                                                                                                 | 0/21 [00:00<?, ?it/s]outputs is of size torch.Size([])
+tensor(40.0024, device='cuda:0')
+outputs is None
+tensor([40.0024], device='cuda:0')
+outputs is None
+Testing DataLoader 0:   5%|███████▎                                                                                                                                                 | 1/21 [00:00<00:14,  1.35it/s]outputs is of size torch.Size([])
+tensor(21.1676, device='cuda:0')
+outputs is None
+tensor([21.1676], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  10%|██████████████▌                                                                                                                                          | 2/21 [00:01<00:11,  1.70it/s]outputs is of size torch.Size([])
+tensor(40.8687, device='cuda:0')
+outputs is None
+tensor([40.8687], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  14%|█████████████████████▊                                                                                                                                   | 3/21 [00:01<00:09,  1.87it/s]outputs is of size torch.Size([])
+tensor(43.0808, device='cuda:0')
+outputs is None
+tensor([43.0808], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  19%|█████████████████████████████▏                                                                                                                           | 4/21 [00:02<00:08,  1.97it/s]outputs is of size torch.Size([])
+tensor(45.7623, device='cuda:0')
+outputs is None
+tensor([45.7623], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  24%|████████████████████████████████████▍                                                                                                                    | 5/21 [00:02<00:07,  2.06it/s]outputs is of size torch.Size([])
+tensor(65.0141, device='cuda:0')
+outputs is None
+tensor([65.0141], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  29%|███████████████████████████████████████████▋                                                                                                             | 6/21 [00:02<00:07,  2.10it/s]outputs is of size torch.Size([])
+tensor(30.6906, device='cuda:0')
+outputs is None
+tensor([30.6906], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  33%|███████████████████████████████████████████████████                                                                                                      | 7/21 [00:03<00:06,  2.15it/s]outputs is of size torch.Size([])
+tensor(28.0203, device='cuda:0')
+outputs is None
+tensor([28.0203], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  38%|██████████████████████████████████████████████████████████▎                                                                                              | 8/21 [00:03<00:05,  2.18it/s]outputs is of size torch.Size([])
+tensor(38.8406, device='cuda:0')
+outputs is None
+tensor([38.8406], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  43%|█████████████████████████████████████████████████████████████████▌                                                                                       | 9/21 [00:04<00:05,  2.22it/s]outputs is of size torch.Size([])
+tensor(34.5765, device='cuda:0')
+outputs is None
+tensor([34.5765], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  48%|████████████████████████████████████████████████████████████████████████▍                                                                               | 10/21 [00:04<00:04,  2.23it/s]outputs is of size torch.Size([])
+tensor(32.0428, device='cuda:0')
+outputs is None
+tensor([32.0428], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  52%|███████████████████████████████████████████████████████████████████████████████▌                                                                        | 11/21 [00:04<00:04,  2.24it/s]outputs is of size torch.Size([])
+tensor(58.8614, device='cuda:0')
+outputs is None
+tensor([58.8614], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  57%|██████████████████████████████████████████████████████████████████████████████████████▊                                                                 | 12/21 [00:05<00:03,  2.26it/s]outputs is of size torch.Size([])
+tensor(15.6447, device='cuda:0')
+outputs is None
+tensor([15.6447], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  62%|██████████████████████████████████████████████████████████████████████████████████████████████                                                          | 13/21 [00:05<00:03,  2.27it/s]outputs is of size torch.Size([])
+tensor(59.8219, device='cuda:0')
+outputs is None
+tensor([59.8219], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  67%|█████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                  | 14/21 [00:06<00:03,  2.28it/s]outputs is of size torch.Size([])
+tensor(5.7185, device='cuda:0')
+outputs is None
+tensor([5.7185], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  71%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                           | 15/21 [00:06<00:02,  2.29it/s]outputs is of size torch.Size([])
+tensor(31.0212, device='cuda:0')
+outputs is None
+tensor([31.0212], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  76%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                    | 16/21 [00:06<00:02,  2.30it/s]outputs is of size torch.Size([])
+tensor(8.8276, device='cuda:0')
+outputs is None
+tensor([8.8276], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  81%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                             | 17/21 [00:07<00:01,  2.30it/s]outputs is of size torch.Size([])
+tensor(25.7847, device='cuda:0')
+outputs is None
+tensor([25.7847], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  86%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                     | 18/21 [00:07<00:01,  2.31it/s]outputs is of size torch.Size([])
+tensor(28.8513, device='cuda:0')
+outputs is None
+tensor([28.8513], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  90%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌              | 19/21 [00:08<00:00,  2.32it/s]outputs is of size torch.Size([])
+tensor(16.4287, device='cuda:0')
+outputs is None
+tensor([16.4287], device='cuda:0')
+outputs is None
+Testing DataLoader 0:  95%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊       | 20/21 [00:08<00:00,  2.31it/s]outputs is of size torch.Size([])
+tensor(17.8903, device='cuda:0')
+outputs is None
+tensor([17.8903], device='cuda:0')
+outputs is None
+Testing DataLoader 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 21/21 [00:09<00:00,  2.31it/s]********************  Finished Testing!  ********************
+Testing DataLoader 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 21/21 [00:09<00:00,  2.31it/s]

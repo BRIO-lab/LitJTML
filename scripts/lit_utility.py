@@ -160,18 +160,18 @@ def run_metrics(output_image, label_image, image_threshold) -> dict:
     fnr = FNR(output_image, label_image, image_threshold)
     ppv = PPV(output_image, label_image, image_threshold)
 
-    metric_dict = {'IOU': iou,
-                    'TN': tn,
-                    'FN': fn,
-                    'TP': tp,
-                    'FP': fp,
-                    'Union': union_metric,
-                    'JAC': jac,
-                    'Recall': recall_metric,
-                    'Specificity': specificity_metric,
-                    'Fallout': fallout_metric,
-                    'FNR': fnr,
-                    'PPV': ppv}
+    metric_dict = {'test_metrics/IOU': iou,
+                    'test_metrics/TN': tn,
+                    'test_metrics/FN': fn,
+                    'test_metrics/TP': tp,
+                    'test_metrics/FP': fp,
+                    'test_metrics/Union': union_metric,
+                    'test_metrics/JAC': jac,
+                    'test_metrics/Recall': recall_metric,
+                    'test_metrics/Specificity': specificity_metric,
+                    'test_metrics/Fallout': fallout_metric,
+                    'test_metrics/FNR': fnr,
+                    'test_metrics/PPV': ppv}
     
     return metric_dict
 
