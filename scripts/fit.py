@@ -64,10 +64,10 @@ def main(config, wandb_run):
 
     # TODO: Are the trainer and Wandb doing the same thing/overwriting the checkpoint?
     #Save model using .ckpt file format. This includes .pth info and other (hparams) info.
-    trainer.save_checkpoint(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt')
+    trainer.save_checkpoint(CKPT_DIR + config.init['WANDB_RUN_GROUP'] + config.init['MODEL_NAME'] + '.ckpt')
     
     # Save model using Wandb
-    wandb.save(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt')
+    wandb.save(CKPT_DIR + config.init['WANDB_RUN_GROUP'] + config.init['MODEL_NAME'] + '.ckpt')
 
 if __name__ == '__main__':
 

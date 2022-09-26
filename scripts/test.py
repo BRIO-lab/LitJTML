@@ -37,7 +37,7 @@ def main(config, wandb_run):
     # This is our LightningModule, which where the architecture is supposed to go.
     # Since we are using an architecure written in PyTorch (PoseHRNet), we feed that architecture in.
     # We also pass our wandb_run object to we can log.
-    model = MyLightningModule.load_from_checkpoint(CKPT_DIR + config.init['MODEL_NAME'] + '.ckpt', pose_hrnet=pose_hrnet, wandb_run=wandb_run)
+    model = MyLightningModule.load_from_checkpoint(CKPT_DIR + config.init['WANDB_RUN_GROUP'] + config.init['MODEL_NAME'] +'.ckpt', pose_hrnet=pose_hrnet, wandb_run=wandb_run)
     if config.datamodule['LOAD_CKPT_FILE'] != None:
         model = MyLightningModule.load_from_checkpoint(config.datamodule['LOAD_CKPT_FILE'], pose_hrnet=pose_hrnet, wandb_run=wandb_run)
     #model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run)
