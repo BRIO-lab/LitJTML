@@ -3,3 +3,5 @@
 
 # Checkpoint files contain model weights and are rather big. To move specific ones, let's use a File Transfer Protocol such as SFTP.
 *.ckpt
+lightning_logs/*
+wandb/*
