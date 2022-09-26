@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/train.py", line 69, in <module>
-    fast_dev_run=config.init['FAST_DEV_RUN'],
-KeyError: 'FAST_DEV_RUN'

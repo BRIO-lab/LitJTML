@@ -1,6 +1,0 @@
-GPU available: True (cuda), used: True
-TPU available: False, using: 0 TPU cores
-IPU available: False, using: 0 IPUs
-HPU available: False, using: 0 HPUs
-/home/sasank/miniconda3/envs/sasank-jtml-env/lib/python3.9/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:616: UserWarning: Checkpoint directory /media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/checkpoints exists and is not empty.
-  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")

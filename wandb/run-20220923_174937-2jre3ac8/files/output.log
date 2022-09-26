@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/media/sasank/LinuxStorage/Dropbox (UFL)/LitJTML/scripts/fit.py", line 77, in <module>
-    main(config)
-TypeError: main() missing 1 required positional argument: 'wandb_run'
