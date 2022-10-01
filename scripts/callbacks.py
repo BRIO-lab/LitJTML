@@ -12,8 +12,6 @@ from utility import run_metrics
 
 class JTMLCallback(Callback):
     def __init__(self, config, wandb_run) -> None:
-    #def __init__(self, config, wandb_logger) -> None:
-    #def __init__(self) -> None:
         super().__init__()
 
         self.config = config
@@ -26,12 +24,12 @@ class JTMLCallback(Callback):
     *********************** Init ***********************
     """
 
-    # This hook will be deprecated in v1.8 ! What do?
+    # TODO: This hook will be deprecated in v1.8 ! What do?
     def on_init_start(self, trainer: "pl.Trainer") -> None:
         print(20 * '*' + "  Starting Initialization!  " + 20 * '*')
         #self.wandb_logger.info(f"*********************** alshdfahsdfhasfdhl *****************")
 
-    # This hook will be deprecated in v1.8 ! What do?
+    # TODO: This hook will be deprecated in v1.8 ! What do?
     def on_init_end(self, trainer: "pl.Trainer") -> None:
         print(20 * '*' + "  Finished Initialization!  " + 20 * '*')
         return super().on_init_end(trainer)

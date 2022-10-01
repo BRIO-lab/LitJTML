@@ -18,17 +18,10 @@ class SegmentationDataModule(pl.LightningDataModule):
     config):
         super().__init__()
 
-        # TODO: Get rid of the temp stuff. Use the data directory and the given data name
-        #self.train_data = config.temp['train_data']
-        #self.val_data = config.temp['val_data']
-        #self.test_data = config.temp['test_data']
         self.img_dir = config.datamodule['IMAGE_DIRECTORY']
         self.train_data = os.getcwd() + '/data/' + config.init['MODEL_NAME'] + '/' + 'train_' + config.init['MODEL_NAME'] + '.csv'
         self.val_data = os.getcwd() + '/data/' + config.init['MODEL_NAME'] + '/' + 'val_' + config.init['MODEL_NAME'] + '.csv'
         self.test_data = os.getcwd() + '/data/' + config.init['MODEL_NAME'] + '/' + 'test_' + config.init['MODEL_NAME'] + '.csv'
-
-        # We want the train/val/test data to come from something like
-        # self.train_data = os.getcwd() + '/data/' + config.init['MODEL_NAME'] + '/' + 'train_' + config.init['MODEL_NAME'] + '.csv'
 
         # Data loader parameters
         self.batch_size = config.datamodule['BATCH_SIZE']
@@ -47,8 +40,8 @@ class SegmentationDataModule(pl.LightningDataModule):
         self.val_set = np.genfromtxt(self.val_data, delimiter=',', dtype=str)
         self.test_set = np.genfromtxt(self.test_data, delimiter=',', dtype=str)
 
-        #check train dataset length and integrity
-        #check val dataset length and integrity
+        # TODO: check train dataset length and integrity
+        # TODO: check val dataset length and integrity
 
     """
     def prepare_data(self):
@@ -58,6 +51,7 @@ class SegmentationDataModule(pl.LightningDataModule):
 
     def setup(self, stage):
         # actually do all the stuff here I think
+        # naw we just left it in the JTMLDataset from old JTML for now
 
         """
         dataset = self.train_set
