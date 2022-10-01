@@ -11,10 +11,10 @@ import torch
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import WandbLogger
 from pytorch_lightning.callbacks import ModelCheckpoint
-from lit_pose_hrnet import MyLightningModule, PoseHighResolutionNet
-from lit_datamodule import MyLightningDataModule
+from pose_hrnet_module import SegmentationNetModule, PoseHighResolutionNet
+from datamodule import SegmentationDataModule
 from callbacks import JTMLCallback
-from lit_utility import create_config_dict
+from utility import create_config_dict
 #import click
 import sys
 import os
@@ -28,7 +28,7 @@ The main function contains the neural network-related code.
 def main(config, wandb_run):
 
     # The DataModule object loads the data from CSVs, calls the JTMLDataset to get data, and creates the dataloaders.
-    data_module = MyLightningDataModule(config=config)
+    data_module = SegmentationDataModule(config=config)
 
     # This is the real architecture we're using. It is vanilla PyTorch - no Lightning.
     pose_hrnet = PoseHighResolutionNet(num_key_points=1, num_image_channels=config.module['NUM_IMAGE_CHANNELS'])
@@ -36,7 +36,7 @@ def main(config, wandb_run):
     # This is our LightningModule, which where the architecture is supposed to go.
     # Since we are using an architecure written in PyTorch (PoseHRNet), we feed that architecture in.
     # We also pass our wandb_run object to we can log.
-    model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run) # I can put some data module stuff in this argument if I want
+    model = SegmentationNetModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run) # I can put some data module stuff in this argument if I want
 
     # This is a callback that should help us with stopping validation when it's time but isn't working.
     save_best_val_checkpoint_callback = ModelCheckpoint(monitor='validation/loss',

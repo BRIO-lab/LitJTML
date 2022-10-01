@@ -8,7 +8,7 @@ from pytorch_lightning.callbacks import Callback
 from pytorch_lightning.callbacks import ModelCheckpoint
 import wandb
 import math
-from lit_utility import run_metrics
+from utility import run_metrics
 
 class JTMLCallback(Callback):
     def __init__(self, config, wandb_run) -> None:

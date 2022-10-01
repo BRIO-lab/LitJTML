@@ -10,10 +10,10 @@ import os
 from skimage import io
 import cv2
 
-from lit_JTMLDataset import LitJTMLDataset
+from JTMLDataset import LitJTMLDataset
 
 
-class MyLightningDataModule(pl.LightningDataModule):
+class SegmentationDataModule(pl.LightningDataModule):
     def __init__(self,
     config):
         super().__init__()

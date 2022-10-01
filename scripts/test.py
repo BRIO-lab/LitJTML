@@ -11,10 +11,10 @@ import torch
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import WandbLogger
 from pytorch_lightning.callbacks import ModelCheckpoint
-from lit_pose_hrnet import MyLightningModule, PoseHighResolutionNet
-from lit_datamodule import MyLightningDataModule
+from pose_hrnet_module import SegmentationNetModule, PoseHighResolutionNet
+from datamodule import SegmentationDataModule
 from callbacks import JTMLCallback
-from lit_utility import create_config_dict
+from utility import create_config_dict
 #import click
 import sys
 import os
@@ -30,7 +30,7 @@ The main function contains the neural network-related code.
 
 def main(config, wandb_run):
     # The DataModule object loads the data from CSVs, calls the JTMLDataset to get data, and creates the dataloaders.
-    data_module = MyLightningDataModule(
+    data_module = SegmentationDataModule(
         config=config)
     # This is the real architecture we're using. It is vanilla PyTorch - no Lightning.
     pose_hrnet = PoseHighResolutionNet(num_key_points=1, num_image_channels=config.module['NUM_IMAGE_CHANNELS'])
@@ -39,11 +39,11 @@ def main(config, wandb_run):
     # Since we are using an architecure written in PyTorch (PoseHRNet), we feed that architecture in.
     # We also pass our wandb_run object to we can log.
     if config.datamodule['CKPT_FILE'] != None:
-        model = MyLightningModule.load_from_checkpoint(config.datamodule['CKPT_FILE'], pose_hrnet=pose_hrnet, wandb_run=wandb_run)
+        model = SegmentationNetModule.load_from_checkpoint(config.datamodule['CKPT_FILE'], pose_hrnet=pose_hrnet, wandb_run=wandb_run)
         print('Checkpoint file loaded from ' + config.datamodule['CKPT_FILE'])
     elif config.datamodule['CKPT_FILE'] == None:
         try:
-            model = MyLightningModule.load_from_checkpoint(CKPT_DIR + config.init['WANDB_RUN_GROUP'] + '/' + config.init['MODEL_NAME'] +'.ckpt', pose_hrnet=pose_hrnet, wandb_run=wandb_run)
+            model = SegmentationNetModule.load_from_checkpoint(CKPT_DIR + config.init['WANDB_RUN_GROUP'] + '/' + config.init['MODEL_NAME'] +'.ckpt', pose_hrnet=pose_hrnet, wandb_run=wandb_run)
         except:
             print("No checkpoint .ckpt file in default location at " + CKPT_DIR + config.init['WANDB_RUN_GROUP'] + '/' + config.init['MODEL_NAME'] +'.ckpt')
     #model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run)

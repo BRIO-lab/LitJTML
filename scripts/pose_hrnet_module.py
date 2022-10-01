@@ -10,7 +10,7 @@ import wandb
 
 from pose_hrnet_modded_in_notebook import PoseHighResolutionNet
 
-class MyLightningModule(pl.LightningModule):
+class SegmentationNetModule(pl.LightningModule):
     def __init__(self, pose_hrnet, wandb_run, learning_rate=1e-3):
     #def __init__(self, pose_hrnet, learning_rate=1e-3):
         super().__init__()
