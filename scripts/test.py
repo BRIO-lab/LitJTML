@@ -14,6 +14,7 @@ from pytorch_lightning.callbacks import ModelCheckpoint
 from lit_pose_hrnet import MyLightningModule, PoseHighResolutionNet
 from lit_datamodule import MyLightningDataModule
 from callbacks import JTMLCallback
+from lit_utility import create_config_dict
 #import click
 import sys
 import os
@@ -37,9 +38,14 @@ def main(config, wandb_run):
     # This is our LightningModule, which where the architecture is supposed to go.
     # Since we are using an architecure written in PyTorch (PoseHRNet), we feed that architecture in.
     # We also pass our wandb_run object to we can log.
-    model = MyLightningModule.load_from_checkpoint(CKPT_DIR + config.init['WANDB_RUN_GROUP'] + config.init['MODEL_NAME'] +'.ckpt', pose_hrnet=pose_hrnet, wandb_run=wandb_run)
-    if config.datamodule['LOAD_CKPT_FILE'] != None:
-        model = MyLightningModule.load_from_checkpoint(config.datamodule['LOAD_CKPT_FILE'], pose_hrnet=pose_hrnet, wandb_run=wandb_run)
+    if config.datamodule['CKPT_FILE'] != None:
+        model = MyLightningModule.load_from_checkpoint(config.datamodule['CKPT_FILE'], pose_hrnet=pose_hrnet, wandb_run=wandb_run)
+        print('Checkpoint file loaded from ' + config.datamodule['CKPT_FILE'])
+    elif config.datamodule['CKPT_FILE'] == None:
+        try:
+            model = MyLightningModule.load_from_checkpoint(CKPT_DIR + config.init['WANDB_RUN_GROUP'] + '/' + config.init['MODEL_NAME'] +'.ckpt', pose_hrnet=pose_hrnet, wandb_run=wandb_run)
+        except:
+            print("No checkpoint .ckpt file in default location at " + CKPT_DIR + config.init['WANDB_RUN_GROUP'] + '/' + config.init['MODEL_NAME'] +'.ckpt')
     #model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run)
     #model = model.load_from_checkpoint(CKPT_DIR + config.init['RUN_NAME'] + '.ckpt')
 
@@ -87,7 +93,8 @@ if __name__ == '__main__':
         project=config.init['PROJECT_NAME'],    # Leave the same for the project (e.g. JTML_seg)
         name=config.init['RUN_NAME'],           # Should be diff every time to avoid confusion (e.g. current time)
         group=config.init['WANDB_RUN_GROUP'],
-        job_type='test'                          # Lets us know in Wandb that this was a test run
+        job_type='test',                         # Lets us know in Wandb that this was a test run
+        config=create_config_dict(config)
     )
 
     main(config,wandb_run)

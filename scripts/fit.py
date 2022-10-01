@@ -14,6 +14,7 @@ from pytorch_lightning.callbacks import ModelCheckpoint
 from lit_pose_hrnet import MyLightningModule, PoseHighResolutionNet
 from lit_datamodule import MyLightningDataModule
 from callbacks import JTMLCallback
+from lit_utility import create_config_dict
 #import click
 import sys
 import os
@@ -67,7 +68,7 @@ def main(config, wandb_run):
     trainer.save_checkpoint(CKPT_DIR + config.init['WANDB_RUN_GROUP'] + config.init['MODEL_NAME'] + '.ckpt')
     
     # Save model using Wandb
-    wandb.save(CKPT_DIR + config.init['WANDB_RUN_GROUP'] + config.init['MODEL_NAME'] + '.ckpt')
+    wandb.save(CKPT_DIR + config.init['WANDB_RUN_GROUP'] + '/' + config.init['MODEL_NAME'] + '.ckpt')
 
 if __name__ == '__main__':
 
@@ -92,7 +93,8 @@ if __name__ == '__main__':
         project=config.init['PROJECT_NAME'],    # Leave the same for the project (e.g. JTML_seg)
         name=config.init['RUN_NAME'],           # Should be diff every time to avoid confusion (e.g. current time)
         group=config.init['WANDB_RUN_GROUP'],
-        job_type='fit'                          # Lets us know in Wandb that this was a fit run
+        job_type='fit',                         # Lets us know in Wandb that this was a fit run
+        config=create_config_dict(config)
         #id=str(time.strftime('%Y-%m-%d-%H-%M-%S'))     # this can be used for custom run ids but must be unique
         #dir='logs/'
         #save_dir='/logs/'

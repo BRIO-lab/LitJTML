@@ -20,7 +20,7 @@ class Configuration:
             #'RUN_NAME': 'Setting Up Wandb Logging!',
             'RUN_NAME': time.strftime('%Y-%m-%d-%H-%M-%S'),
             'WANDB_RUN_GROUP': 'Local',
-            'FAST_DEV_RUN': True,  # Runs inputted batches (True->1) and disables logging and some callbacks
+            'FAST_DEV_RUN': False,  # Runs inputted batches (True->1) and disables logging and some callbacks
             'MAX_EPOCHS': 1,
             'MAX_STEPS': -1,    # -1 means it will do all steps and be limited by epochs
             'STRATEGY': None    # This is the training strategy. Should be 'ddp' for multi-GPU (like HPG)
@@ -43,13 +43,13 @@ class Configuration:
             'IMAGE_WIDTH': 1024,
             'MODEL_TYPE': 'fem',        # how should we do this? not clear this is still best...
             'CLASS_LABELS': {0: 'bone', 1: 'background'},
-            'IMG_CHANNELS': 1,
+            'IMG_CHANNELS': 1,      # Is this differnt from self.module['NUM_IMAGE_CHANNELS']
             'IMAGE_THRESHOLD': 0
         }
 
         self.datamodule = {
             'IMAGE_DIRECTORY': '/media/sasank/LinuxStorage/Dropbox (UFL)/Canine Kinematics Data/TPLO_Ten_Dogs_grids',
-            'LOAD_CKPT_FILE': None,
+            'CKPT_FILE': None,
             'BATCH_SIZE': 1,
             'SHUFFLE': True,
             'NUM_WORKERS': os.cpu_count(),
