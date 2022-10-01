@@ -45,7 +45,7 @@ wandb_run = wandb.init(
 
 
 DATA_DIR = config.etl['DATA_DIR']
-MODEL_DIR_NAME = config.etl['MODEL_NAME']
+MODEL_DIR_NAME = config.init['MODEL_NAME']
 PROCESSED_PATH = os.getcwd() + '/' + DATA_DIR + '/' + MODEL_DIR_NAME
 if os.path.isdir(PROCESSED_PATH) == False:
     os.mkdir(PROCESSED_PATH)
@@ -56,8 +56,8 @@ RAW_DATA_FILE = config.etl['RAW_DATA_FILE']
 if RAW_DATA_FILE == -1:
     IMAGE_DIR = config.datamodule['IMAGE_DIRECTORY']
     OUTPUT_DIR = PROCESSED_PATH
-    CSV_NAME = config.etl['MODEL_NAME']
-    if os.path.isfile(OUTPUT_DIR + CSV_NAME + '.csv') == True:
+    CSV_NAME = config.init['MODEL_NAME']
+    if os.path.isfile(OUTPUT_DIR + '/' + CSV_NAME + '.csv') == True:
         raise Exception('Error, the full data CSV is already present. Please set config.etl[\'RAW_DATA_FILE\'] to this file.')
 
 
@@ -71,7 +71,8 @@ if RAW_DATA_FILE == -1:
     fem_and_tib = np.concatenate((fem[:,None],tib[:,None]), axis = 1)
     all_images_and_masks = np.concatenate((grid[:,None],fem_and_tib), axis = 1)
     headers = np.array([["img","fem","tib"]])
-    np.savetxt(OUTPUT_DIR + CSV_NAME + '.csv', all_images_and_masks, fmt = '%s', delimiter = ',')
+    np.savetxt(OUTPUT_DIR + '/' + CSV_NAME + '.csv', all_images_and_masks, fmt = '%s', delimiter = ',')
+    RAW_DATA_FILE = OUTPUT_DIR + '/' + CSV_NAME + '.csv'
 
 
 # now assume the RAW_DATA_FILE lives at RAW_DATA_FILE
@@ -87,14 +88,14 @@ train,val  = tts(train_and_val,
                 random_state = config.etl['RANDOM_STATE'])
 
 # name the .csv files
-train_name = "train_" + config.data_constants["MODEL_NAME"] + ".csv"
-val_name =   "val_" + config.data_constants["MODEL_NAME"] + ".csv"
-test_name =  "test_" + config.data_constants["MODEL_NAME"] + ".csv"
+train_name = "train_" + config.init["MODEL_NAME"] + ".csv"
+val_name =   "val_" + config.init["MODEL_NAME"] + ".csv"
+test_name =  "test_" + config.init["MODEL_NAME"] + ".csv"
 
 
 # export data
-train.to_csv(PROCESSED_PATH / config.data_constants["MODEL_NAME"] / train_name, index=False)
-test.to_csv(PROCESSED_PATH / config.data_constants["MODEL_NAME"] / test_name, index=False)
-val.to_csv(PROCESSED_PATH / config.data_constants["MODEL_NAME"] / val_name, index = False)
+train.to_csv(PROCESSED_PATH + '/' + train_name, index=False)
+test.to_csv(PROCESSED_PATH + '/' + test_name, index=False)
+val.to_csv(PROCESSED_PATH + '/' + val_name, index = False)
 
 

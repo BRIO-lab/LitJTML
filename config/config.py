@@ -7,25 +7,27 @@ import os
 
 class Configuration:
     def __init__(self):
+        """
         self.temp = {
             'train_data': '/home/sasank/Documents/GitRepos/Sasank_JTML_seg/data/3_2_22_fem/train_3_2_22_fem.csv',
             'val_data': '/home/sasank/Documents/GitRepos/Sasank_JTML_seg/data/3_2_22_fem/val_3_2_22_fem.csv',
             'test_data': '/home/sasank/Documents/GitRepos/Sasank_JTML_seg/data/3_2_22_fem/test_3_2_22_fem.csv'
         }
+        """
         self.init = {
             'PROJECT_NAME': 'LitJTML Development!',
             'MODEL_NAME': 'MyModel',
             #'RUN_NAME': 'Setting Up Wandb Logging!',
             'RUN_NAME': time.strftime('%Y-%m-%d-%H-%M-%S'),
             'WANDB_RUN_GROUP': 'Local',
-            'FAST_DEV_RUN': False,  # Runs inputted batches (True->1) and disables logging and some callbacks
+            'FAST_DEV_RUN': True,  # Runs inputted batches (True->1) and disables logging and some callbacks
             'MAX_EPOCHS': 1,
             'MAX_STEPS': -1,    # -1 means it will do all steps and be limited by epochs
             'STRATEGY': None    # This is the training strategy. Should be 'ddp' for multi-GPU (like HPG)
         }
         self.etl = {
-            'RAW_DATA_FILE': -1, \
-            'DATA_DIR': "data",\
+            'RAW_DATA_FILE': -1,
+            'DATA_DIR': "data",
             'VAL_SIZE':  0.2,       # looks sus
             'TEST_SIZE': 0.01,      # I'm not sure these two mean what we think
             #'random_state': np.random.randint(1,50)
