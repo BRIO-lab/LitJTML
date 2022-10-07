@@ -69,6 +69,7 @@ def main(config, wandb_run):
     
     # Save model using Wandb
     wandb.save(CKPT_DIR + config.init['WANDB_RUN_GROUP'] + '/' + config.init['MODEL_NAME'] + '.ckpt')
+    wandb_run.config.update({'Model Save Directory': CKPT_DIR + config.init['WANDB_RUN_GROUP'] + '/' + config.init['MODEL_NAME'] + '.ckpt'})
 
 if __name__ == '__main__':
 
