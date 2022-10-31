@@ -8,6 +8,9 @@ import numpy as np
 import pytorch_lightning as pl
 import wandb
 
+import time
+import nvtx
+
 from pose_hrnet_modded_in_notebook import PoseHighResolutionNet
 
 class SegmentationNetModule(pl.LightningModule):
@@ -41,6 +44,7 @@ class SegmentationNetModule(pl.LightningModule):
         optimizer = torch.optim.Adam(self.parameters(), lr=self.hparams.learning_rate)
         return optimizer
 
+    @nvtx.annotate("Training step", color="red", domain="my_domain")
     def training_step(self, train_batch, batch_idx):
         training_batch, training_batch_labels = train_batch['image'], train_batch['label']
         x = training_batch
@@ -53,6 +57,7 @@ class SegmentationNetModule(pl.LightningModule):
         #self.log(name="train/loss", value=loss)
         return loss
 
+    @nvtx.annotate("Validation step", color="green", domain="my_domain")
     def validation_step(self, validation_batch, batch_idx):
         val_batch, val_batch_labels = validation_batch['image'], validation_batch['label']
         x = val_batch
@@ -67,6 +72,7 @@ class SegmentationNetModule(pl.LightningModule):
         self.wandb_run.log({'val_output': image})
         return loss
 
+    @nvtx.annotate("Test step", color="blue", domain="my_domain")
     def test_step(self, test_batch, batch_idx):
         test_batch, test_batch_labels = test_batch['image'], test_batch['label']
         x = test_batch
