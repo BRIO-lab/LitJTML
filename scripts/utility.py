@@ -48,8 +48,8 @@ def create_config_dict(config) -> dict:
                     'datamodule/Num Workers': config.datamodule['NUM_WORKERS'],
                     'datamodule/Pin Memory': config.datamodule['PIN_MEMORY'],
                     'datamodule/Subset Pixels': config.datamodule['SUBSET_PIXELS'],
-                    'module/Loss Function': config.module['LOSS_FN'],
-                    'module/Num Image Channels': config.module['NUM_IMAGE_CHANNELS'],
+                    #'module/Loss Function': config.module['LOSS_FN'],
+                    #'module/Num Image Channels': config.module['NUM_IMAGE_CHANNELS'],
                     'hparams/Load From Checkpoint': config.hparams['LOAD_FROM_CHECKPOINT'],
                     'hparams/Learning_Rate': config.hparams['learning_rate'],
                     'transform/Transform': config.transform}

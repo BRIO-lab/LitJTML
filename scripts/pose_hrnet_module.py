@@ -14,11 +14,14 @@ import nvtx
 from pose_hrnet_modded_in_notebook import PoseHighResolutionNet
 
 class SegmentationNetModule(pl.LightningModule):
-    def __init__(self, pose_hrnet, wandb_run, learning_rate=1e-3):
+    def __init__(self, config, wandb_run, learning_rate=1e-3):
     #def __init__(self, pose_hrnet, learning_rate=1e-3):
         super().__init__()
         self.save_hyperparameters("learning_rate")
-        self.pose_hrnet = pose_hrnet
+        self.config = config    
+        self.pose_hrnet = PoseHighResolutionNet(num_key_points=self.config.segmentation_net_module['NUM_KEY_POINTS'],
+                                                num_image_channels=self.config.segmentation_net_module['NUM_IMG_CHANNELS'])
+        #self.pose_hrnet = pose_hrnet
         print("Pose HRNet is on device " + str(next(self.pose_hrnet.parameters()).get_device()))     # testing line
         print("Is Pose HRNet on GPU? " + str(next(self.pose_hrnet.parameters()).is_cuda))            # testing line
         self.pose_hrnet.to(device='cuda', dtype=torch.float32)                          # added recently and may fix a lot
