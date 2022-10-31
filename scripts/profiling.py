@@ -99,7 +99,7 @@ if __name__ == '__main__':
         name=config.init['RUN_NAME'],           # Should be diff every time to avoid confusion (e.g. current time)
         group=config.init['WANDB_RUN_GROUP'],
         job_type='fit',                         # Lets us know in Wandb that this was a fit run
-        config=create_config_dict(config)
+        config=create_config_dict(config)      # Reinstate soon
         #id=str(time.strftime('%Y-%m-%d-%H-%M-%S'))     # this can be used for custom run ids but must be unique
         #dir='logs/'
         #save_dir='/logs/'

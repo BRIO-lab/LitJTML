@@ -18,7 +18,7 @@ class SegmentationNetModule(pl.LightningModule):
         self.pose_hrnet = pose_hrnet
         print("Pose HRNet is on device " + str(next(self.pose_hrnet.parameters()).get_device()))     # testing line
         print("Is Pose HRNet on GPU? " + str(next(self.pose_hrnet.parameters()).is_cuda))            # testing line
-        self.pose_hrnet.to(device='cuda', dtype=torch.float32)
+        self.pose_hrnet.to(device='cuda', dtype=torch.float32)                          # added recently and may fix a lot
         print("Pose HRNet is on device " + str(next(self.pose_hrnet.parameters()).get_device()))     # testing line
         print("Is Pose HRNet on GPU? " + str(next(self.pose_hrnet.parameters()).is_cuda))            # testing line
         self.wandb_run = wandb_run
