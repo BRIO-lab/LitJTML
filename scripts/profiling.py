@@ -22,6 +22,8 @@ import time
 import wandb
 
 from torch.profiler import profile, record_function, ProfilerActivity
+import time
+import nvtx
 
 
 """
@@ -63,9 +65,8 @@ def main(config, wandb_run):
     
     # This is the step where everything happens.
     # Fitting includes both training and validation.
-    #with profile(activities=[ProfilerActivity.CPU], profile_memory=True, record_shapes=True, use_cuda=True) as prof:
-    trainer.fit(model, data_module)
-    #prof.export_chrome_trace("trace.json")
+    with nvtx.annotate("fitting"):
+        trainer.fit(model, data_module)
 
     # TODO: Are the trainer and Wandb doing the same thing/overwriting the checkpoint?
     #Save model using .ckpt file format. This includes .pth info and other (hparams) info.
