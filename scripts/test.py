@@ -33,7 +33,7 @@ def main(config, wandb_run):
     data_module = SegmentationDataModule(
         config=config)
     # This is the real architecture we're using. It is vanilla PyTorch - no Lightning.
-    pose_hrnet = PoseHighResolutionNet(num_key_points=1, num_image_channels=config.module['NUM_IMAGE_CHANNELS'])
+    #pose_hrnet = PoseHighResolutionNet(num_key_points=1, num_image_channels=config.module['NUM_IMAGE_CHANNELS'])
     #model = MyLightningModule(pose_hrnet=pose_hrnet, wandb_run=wandb_run).load_from_checkpoint(CKPT_DIR + config.init['RUN_NAME'] + '.ckpt')
     # This is our LightningModule, which where the architecture is supposed to go.
     # Since we are using an architecure written in PyTorch (PoseHRNet), we feed that architecture in.
