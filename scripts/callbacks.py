@@ -26,12 +26,12 @@ class JTMLCallback(Callback):
 
     # TODO: This hook will be deprecated in v1.8 ! What do?
     def on_init_start(self, trainer: "pl.Trainer") -> None:
-        print(20 * '*' + "  Starting Initialization!  " + 20 * '*')
+        print('\n' + 20 * '*' + "  Starting Initialization!  " + 20 * '*' + '\n')
         #self.wandb_logger.info(f"*********************** alshdfahsdfhasfdhl *****************")
 
     # TODO: This hook will be deprecated in v1.8 ! What do?
     def on_init_end(self, trainer: "pl.Trainer") -> None:
-        print(20 * '*' + "  Finished Initialization!  " + 20 * '*')
+        print('\n' + 20 * '*' + "  Finished Initialization!  " + 20 * '*' + '\n')
         return super().on_init_end(trainer)
 
     """
@@ -61,11 +61,11 @@ class JTMLCallback(Callback):
         return super().on_train_end(trainer, pl_module)
 
     def on_train_epoch_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
-        print(20 * '*' + f'Starting train epoch {pl_module.current_epoch}!' + 20 * '*')
+        print('\n' + 20 * '*' + f'Starting train epoch {pl_module.current_epoch}!' + 20 * '*' + '\n')
         return super().on_epoch_start(trainer, pl_module)
 
     def on_train_epoch_end(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
-        print(20 * '*' + f'Finished train epoch {pl_module.current_epoch}!' + 20 * '*')
+        print('\n' + 20 * '*' + f'Finished train epoch {pl_module.current_epoch}!' + 20 * '*' + '\n')
         return super().on_epoch_end(trainer, pl_module)
 
     """
@@ -81,11 +81,11 @@ class JTMLCallback(Callback):
     """
 
     def on_validation_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
-        print(20 * '*' + "  Starting Validation!  " + 20 * '*')
+        print('\n' + 20 * '*' + "  Starting Validation!  " + 20 * '*' + '\n')
         return super().on_validation_start(trainer, pl_module)
 
     def on_validation_end(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
-        print(20 * '*' + "  Finished Validation!  " + 20 * '*')
+        print('\n' + 20 * '*' + "  Finished Validation!  " + 20 * '*' + '\n')
         # TODO: is the below line right? Should it be in this hook or in on_validation_epoch_end()?
         print(15 * '*' + 'Min Validation Loss is ' + str(self.min_val_loss))
         return super().on_validation_end(trainer, pl_module)
