@@ -17,12 +17,14 @@ import os
 
 
 class LitJTMLDataset(Dataset):
-    def __init__(self, dataset, img_dir):
+    def __init__(self, config, dataset, img_dir):
 
+        self.config = config
+        self.transform = self.config.transform
         #self.img_dir = '/media/sasank/LinuxStorage/Dropbox (UFL)/Canine Kinematics Data/TPLO_Ten_Dogs_grids'
         self.img_dir = img_dir
         #self.img_dir = '/blue/banks/sasank.desaraju/Sasank_JTML_seg/Images/TPLO_Tend_Dogs_grids_2_22_22'
-        self.data_dir = ''  # I don't know if this will actually get used if I pass in a loaded dataset
+        #self.data_dir = ''  # I don't know if this will actually get used if I pass in a loaded dataset
 
         self.dataset = dataset
         self.images = self.dataset[1:,0]
@@ -61,21 +63,18 @@ class LitJTMLDataset(Dataset):
 
     # SUBSET_PIXEL
 	# This constrains the bounds of the image to just around the bone
-        #if self.config.data_loader_parameters["SUBSET_IMAGES"] == True:
-        if True:
+        if self.config.datamodule["SUBSET_PIXELS"] == True:
             kernel = np.ones((30,30), np.uint8)
             label_dilated = cv2.dilate(label, kernel, iterations = 5)
             image_subsetted = cv2.multiply(label_dilated, image)
             image = image_subsetted
         
-        """ implement once we put in transforms
         if self.transform is not None:
             image = np.array(image)
             label = np.array(label)
             transformed = self.transform(image = image, mask = label)
             image = transformed["image"]
             label = transformed["mask"]
-        """
 
         
         image = torch.FloatTensor(image[None, :, :])

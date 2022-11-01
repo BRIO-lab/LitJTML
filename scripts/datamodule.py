@@ -14,20 +14,21 @@ from JTMLDataset import LitJTMLDataset
 
 
 class SegmentationDataModule(pl.LightningDataModule):
-    def __init__(self,
-    config):
+    def __init__(self, config):
         super().__init__()
 
-        self.img_dir = config.datamodule['IMAGE_DIRECTORY']
-        self.train_data = os.getcwd() + '/data/' + config.init['MODEL_NAME'] + '/' + 'train_' + config.init['MODEL_NAME'] + '.csv'
-        self.val_data = os.getcwd() + '/data/' + config.init['MODEL_NAME'] + '/' + 'val_' + config.init['MODEL_NAME'] + '.csv'
-        self.test_data = os.getcwd() + '/data/' + config.init['MODEL_NAME'] + '/' + 'test_' + config.init['MODEL_NAME'] + '.csv'
+        self.config = config
+        self.img_dir = self.config.datamodule['IMAGE_DIRECTORY']
+        self.train_data = os.getcwd() + '/data/' + self.config.init['MODEL_NAME'] + '/' + 'train_' + self.config.init['MODEL_NAME'] + '.csv'
+        self.val_data = os.getcwd() + '/data/' + self.config.init['MODEL_NAME'] + '/' + 'val_' + self.config.init['MODEL_NAME'] + '.csv'
+        self.test_data = os.getcwd() + '/data/' + self.config.init['MODEL_NAME'] + '/' + 'test_' + self.config.init['MODEL_NAME'] + '.csv'
 
         # Data loader parameters
-        self.batch_size = config.datamodule['BATCH_SIZE']
-        self.num_workers = config.datamodule['NUM_WORKERS']
-        self.pin_memory = config.datamodule['PIN_MEMORY']
-        self.shuffle = config.datamodule['SHUFFLE']
+        # TODO: clean this up since we pulled config into this class
+        self.batch_size = self.config.datamodule['BATCH_SIZE']
+        self.num_workers = self.config.datamodule['NUM_WORKERS']
+        self.pin_memory = self.config.datamodule['PIN_MEMORY']
+        self.shuffle = self.config.datamodule['SHUFFLE']
         self.train_data_loader_parameters = { 'batch_size': self.batch_size,
                                         'num_workers': self.num_workers,
                                         'pin_memory': self.pin_memory,
@@ -74,9 +75,15 @@ class SegmentationDataModule(pl.LightningDataModule):
         created_dataset = LitJTMLDataset(dataset)
         """
 
-        self.training_set = LitJTMLDataset(dataset=self.train_set, img_dir=self.img_dir)
-        self.validation_set = LitJTMLDataset(dataset=self.val_set, img_dir=self.img_dir)
-        self.test_set = LitJTMLDataset(dataset=self.test_set, img_dir=self.img_dir)
+        self.training_set = LitJTMLDataset(config=self.config,
+                                            dataset=self.train_set,
+                                            img_dir=self.img_dir)
+        self.validation_set = LitJTMLDataset(config=self.config,
+                                            dataset=self.val_set,
+                                            img_dir=self.img_dir)
+        self.test_set = LitJTMLDataset(config=self.config,
+                                            dataset=self.test_set,
+                                            img_dir=self.img_dir)
 
         return
 
