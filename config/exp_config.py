@@ -56,18 +56,12 @@ class Configuration:
             'IMAGE_DIRECTORY': '/media/sasank/LinuxStorage/Dropbox (UFL)/Canine Kinematics Data/TPLO_Ten_Dogs_grids',
             'CKPT_FILE': None,
             'BATCH_SIZE': 1,
-            'SHUFFLE': True,
+            'SHUFFLE': True,        # Only for training, for test and val this is set in the datamodule script to False
             'NUM_WORKERS': os.cpu_count(),
             'PIN_MEMORY': False,
             'SUBSET_PIXELS': True
         }
 
-        """
-        self.module = {
-            'LOSS_FN': nn.MSELoss(),
-            'NUM_IMAGE_CHANNELS': 1
-        }
-        """
 
         # hyperparameters for training
         self.hparams = {
