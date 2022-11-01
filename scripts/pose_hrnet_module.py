@@ -51,7 +51,7 @@ class SegmentationNetModule(pl.LightningModule):
     def training_step(self, train_batch, batch_idx):
         training_batch, training_batch_labels = train_batch['image'], train_batch['label']
         x = training_batch
-        #print("Training batch is on device " + str(x.get_device()))         # testing line
+        print("Training batch is on device " + str(x.get_device()))         # testing line
         training_output = self.pose_hrnet(x)
         loss = self.loss_fn(training_output, training_batch_labels)
         #self.log('exp_train/loss', loss, on_step=True)
@@ -64,7 +64,7 @@ class SegmentationNetModule(pl.LightningModule):
     def validation_step(self, validation_batch, batch_idx):
         val_batch, val_batch_labels = validation_batch['image'], validation_batch['label']
         x = val_batch
-        #print("Validation batch is on device " + str(x.get_device()))       # testing line
+        print("Validation batch is on device " + str(x.get_device()))       # testing line
         val_output = self.pose_hrnet(x)
         loss = self.loss_fn(val_output, val_batch_labels)
         #self.log('validation/loss', loss)
