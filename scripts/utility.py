@@ -41,6 +41,7 @@ def create_config_dict(config) -> dict:
                     'dataset/Class Labels': config.dataset['CLASS_LABELS'],
                     'dataset/Image Channels': config.dataset['IMG_CHANNELS'],
                     'dataset/Image Threshold': config.dataset['IMAGE_THRESHOLD'],
+                    'dataset/Using Albumentations': config.dataset['USE_ALBUMENTATIONS'],
                     'datamodule/Image Directory': config.datamodule['IMAGE_DIRECTORY'],
                     'datamodule/Checkpoint File': str(config.datamodule['CKPT_FILE']),
                     'datamodule/Batch Size': config.datamodule['BATCH_SIZE'],

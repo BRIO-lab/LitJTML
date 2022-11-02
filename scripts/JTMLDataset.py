@@ -69,7 +69,7 @@ class LitJTMLDataset(Dataset):
             image_subsetted = cv2.multiply(label_dilated, image)
             image = image_subsetted
         
-        if self.transform is not None:
+        if self.config.dataset['USE_ALBUMENTATIONS'] == True:
             image = np.array(image)
             label = np.array(label)
             transformed = self.transform(image = image, mask = label)

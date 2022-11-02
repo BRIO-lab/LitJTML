@@ -44,7 +44,8 @@ class Configuration:
             'MODEL_TYPE': 'fem',        # how should we do this? not clear this is still best...
             'CLASS_LABELS': {0: 'bone', 1: 'background'},
             'IMG_CHANNELS': 1,      # Is this differnt from self.module['NUM_IMAGE_CHANNELS']
-            'IMAGE_THRESHOLD': 0
+            'IMAGE_THRESHOLD': 0,
+            'USE_ALBUMENTATIONS': True
         }
         # segmentation_net_module needs to be below dataset because it uses dataset['IMG_CHANNELS']
         self.segmentation_net_module = {
