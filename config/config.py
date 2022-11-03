@@ -16,11 +16,11 @@ class Configuration:
         """
         self.init = {
             'PROJECT_NAME': 'LitJTML Development!',
-            'MODEL_NAME': 'MyModel',
+            'MODEL_NAME': 'ETL_test',
             #'RUN_NAME': 'Setting Up Wandb Logging!',
             'RUN_NAME': time.strftime('%Y-%m-%d-%H-%M-%S'),
             'WANDB_RUN_GROUP': 'Local',
-            'FAST_DEV_RUN': False,  # Runs inputted batches (True->1) and disables logging and some callbacks
+            'FAST_DEV_RUN': True,  # Runs inputted batches (True->1) and disables logging and some callbacks
             'MAX_EPOCHS': 1,
             'MAX_STEPS': -1,    # -1 means it will do all steps and be limited by epochs
             'STRATEGY': None    # This is the training strategy. Should be 'ddp' for multi-GPU (like HPG)
@@ -44,23 +44,25 @@ class Configuration:
             'MODEL_TYPE': 'fem',        # how should we do this? not clear this is still best...
             'CLASS_LABELS': {0: 'bone', 1: 'background'},
             'IMG_CHANNELS': 1,      # Is this differnt from self.module['NUM_IMAGE_CHANNELS']
-            'IMAGE_THRESHOLD': 0
+            'IMAGE_THRESHOLD': 0,
+            'USE_ALBUMENTATIONS': True
+        }
+        # segmentation_net_module needs to be below dataset because it uses dataset['IMG_CHANNELS']
+        self.segmentation_net_module = {
+                'NUM_KEY_POINTS': 1,
+                'NUM_IMG_CHANNELS': self.dataset['IMG_CHANNELS']
         }
 
         self.datamodule = {
             'IMAGE_DIRECTORY': '/media/sasank/LinuxStorage/Dropbox (UFL)/Canine Kinematics Data/TPLO_Ten_Dogs_grids',
             'CKPT_FILE': None,
             'BATCH_SIZE': 1,
-            'SHUFFLE': True,
+            'SHUFFLE': True,        # Only for training, for test and val this is set in the datamodule script to False
             'NUM_WORKERS': os.cpu_count(),
             'PIN_MEMORY': False,
             'SUBSET_PIXELS': True
         }
 
-        self.module = {
-            'LOSS_FN': nn.MSELoss(),
-            'NUM_IMAGE_CHANNELS': 1
-        }
 
         # hyperparameters for training
         self.hparams = {
